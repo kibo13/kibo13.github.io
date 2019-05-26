@@ -1,0 +1,65 @@
+.footer 
+  &__list
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin: 30px 0
+
+.logo 
+  &__link
+    +bold
+    font-size: 24px
+    line-height: 30px
+    padding: 5px 10px
+    color: #000000
+    background: #4bbda2
+
+.social 
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  align-items: center
+  text-align: center
+  margin: 30px 0
+
+  &__link
+    display: block
+    position: relative
+    margin: 0px 20px
+    +bold
+    font-size: 18px
+    letter-spacing: 1px
+    color: #f3f3f3
+
+    &:last-child 
+      margin-right: 0
+    
+    &::before
+      content: ''
+      position: absolute
+      bottom: -5px
+      right: 0
+      width: 0%
+      height: 2px
+      background: #f3f3f3
+      transition: .5s
+
+    &:hover::before 
+      width: 100%
+      left: 0
+      background: #4bbda2
+
+.author
+  color: #f3f3f3
+  font-size: 13px
+  opacity: .5
+  &__link
+    color: #f3f3f3
+    font-size: 13px
+
+@media (max-width: 530px)
+  .social
+    &__link
+      flex-basis: 50%
+      margin: 10px 0
