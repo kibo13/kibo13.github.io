@@ -1,2 +1,80 @@
 .test
   padding-top: 20px 
+  padding-bottom: 0
+
+  &__list
+    display: flex
+    flex-wrap: wrap
+  
+  &__item
+    position: relative
+    flex-basis: 25%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    box-shadow: $in-shadow
+    background-color: rgba(#ffffff, .6)
+
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 0
+      height: 100%
+      background: rgba($link-color, .3)
+      transition: .3s
+      transition-delay: .2s
+    
+    &:hover::before
+      width: 100%
+    
+    &:hover
+      cursor: pointer   
+      .test
+        &__img
+          transform: scale(1.1)
+
+  &__link
+    display: block
+    width: 100%
+    height: 100%
+    text-align: center
+    z-index: 1
+
+  &__box
+    width: 100%
+
+  &__img  
+    display: block
+    margin: 50px auto 70px
+    width: 230px
+    height: 230px
+    border-radius: 50%
+    box-shadow: $circle-shadow
+    transition: all .3s ease
+  
+  &__title,
+  &__text
+    display: block
+    font-size: 12px
+  
+  &__title
+    text-transform: uppercase
+    +bold
+    margin-bottom: 5px
+  
+  &__text
+    margin-bottom: 30px
+    opacity: .9
+
+@media (max-width: 1024px)
+  .test
+    &__item
+      flex-basis: 50%
+
+@media (max-width: 565px)
+  .test
+    &__item
+      flex-basis: 100%
