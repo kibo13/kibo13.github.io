@@ -9,16 +9,18 @@ a
 li 
 	list-style: none
 
+//margin-right 
+.mr-x
+  margin-right: 30px
+
+.container
+  width: 80%
+  margin: auto
+
 .section 
-  &__wrap
-    &-light
-      background-color: $light-color
-    &-dark
-      background-color: $dark-color
-  &__container
-    padding: 50px 0 20px
-    width: 80%
-    margin: auto
+  padding-top: 50px
+  padding-bottom: 30px
+  
   &__title
     text-align: center
     text-transform: uppercase
@@ -34,3 +36,12 @@ li
       width: 100px
       height: 3px
       background: $link-color
+
+.bg
+  &-light
+    background-color: $light-color
+  &-dark
+    background-color: $dark-color  
+
+
+  
