@@ -12,8 +12,8 @@
     font-size: 24px
     line-height: 30px
     padding: 5px 10px
-    color: #000000
-    background: #4bbda2
+    color: $dark-color
+    background: $link-color
 
 .social 
   display: flex
@@ -30,7 +30,7 @@
     +bold
     font-size: 18px
     letter-spacing: 1px
-    color: #f3f3f3
+    color: $light-color
 
     &:last-child 
       margin-right: 0
@@ -42,20 +42,20 @@
       right: 0
       width: 0%
       height: 2px
-      background: #f3f3f3
+      background: $light-color
       transition: .5s
 
     &:hover::before 
       width: 100%
       left: 0
-      background: #4bbda2
+      background: $link-color
 
 .author
-  color: #f3f3f3
+  color: $light-color
   font-size: 13px
   opacity: .5
   &__link
-    color: #f3f3f3
+    color: $light-color
     font-size: 13px
 
 @media (max-width: 530px)
