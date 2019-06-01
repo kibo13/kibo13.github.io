@@ -92,28 +92,6 @@
   &__title
     +bold
     font-size: 18px
-
-    &-hide
-      position: relative
-      display: none
-      +bold
-      font-size: 16px
-      color: #ffffff
-
-      &::before
-        content: ''
-        position: absolute
-        bottom: -5px
-        right: 0
-        width: 0%
-        height: 2px
-        background: #f3f3f3
-        transition: .5s
-        
-      &:hover::before
-        width: 100%
-        left: 0
-        background: #4bbda2
   
   &__text
     font-size: 14px
@@ -166,12 +144,10 @@
 @media (max-width: 545px)
   .portfolio
     &__title,
-    &__text,
-    &__link
+    &__text
       display: none
-    &__title-hide
-      display: block
-    
+
+
 
 
 
