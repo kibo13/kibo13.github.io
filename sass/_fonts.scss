@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'Helvetica Neue Cyr Light';
   font-display: swap;
-  src: url('HelveticaNeueCyr-Light.eot');
-  src: url('HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
-    url('HelveticaNeueCyr-Light.woff') format('woff'),
-    url('HelveticaNeueCyr-Light.ttf') format('truetype');
+  src: url('../fonts/HelveticaNeueCyr-Light.eot');
+  src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
+       url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,16 +14,16 @@
   font-display: swap;
   src: url('../fonts/HelveticaNeueCyr-Medium.eot');
   src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
-    url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+       url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
+       url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-@mixin bold {
-  font-family: 'Helvetica Neue Cyr Medium', sans-serif;
+@mixin light {
+  font-family: 'Helvetica Neue Cyr Light', monospace;
 }
 
-@mixin light {
-  font-family: 'Helvetica Neue Cyr Light', sans-serif;
+@mixin bold {
+  font-family: 'Helvetica Neue Cyr Medium';
 }
