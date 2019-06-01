@@ -40,28 +40,21 @@
 .navbar 
   position: fixed
   top: 0
-  left: 0
   width: 100%
-  background: $dark-color
   height: $nav-height
+  display: flex
+  justify-content: space-between
+  align-items: center
+  background: $dark-color
+  border-bottom: 1px solid rgba($link-color, .1)
   z-index: 2
-  opacity: .7
-
-  &:hover
-    opacity: 1
-
-  &__container
-    width: 90%
-    margin: auto
-    display: flex
-    justify-content: space-between
-    align-items: center
-    height: $nav-height 
   
-  &__logo
+  &__logo,
+  &__btn
     position: relative
+    margin: 0px 15px
     z-index: 3
-    
+     
   &__list 
     display: flex
     margin: 0
@@ -145,8 +138,6 @@
           align-items: center
 
         &__btn
-          position: relative
-          z-index: 3
           .navbar__icon 
             background: transparent
 
