@@ -11,8 +11,17 @@ $(document).ready(function () {
   });
 
   $('.navbar__link').on('click', function () {
+    $('body').css('overflow', 'auto');
     $('#burger').prop('checked', false);
   });
+
+  $('#burger').on('click', function () {
+    if ($('#burger').prop('checked')) {
+      $('body').css('overflow', 'hidden')
+    } else {
+      $('body').css('overflow', 'auto')
+    }   
+  })
 
   /* ============================= */
   /* control active link on scroll */
@@ -56,3 +65,4 @@ $(document).ready(function () {
     }
   });
 });
+
