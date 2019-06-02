@@ -1,290 +1,260 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Борис Ким - Frontend Developer</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="shortcut icon" href="img/logo.ico" />
-  </head>
 
-  <body>
-    <header id="home" class="header bg-dark">
-      <nav class="navbar">
-          <div class="logo navbar__logo">
-            <a href="https://kibo13.github.io/" class="logo__link">B</a>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Борис Ким - Frontend Developer</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="img/logo.ico" />
+</head>
 
-          <input type="checkbox" id="burger" class="navbar__checkbox">
-          <label for="burger" class="navbar__btn">
-            <div class="navbar__icon"></div>
-          </label>
-
-          <ul class="navbar__list">
-            <li class="navbar__item active">
-              <a href="#home" class="navbar__link">Обо мне</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#portfolio" class="navbar__link">Портфолио</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#test" class="navbar__link">Блог</a>
-            </li>
-            <li class="navbar__item">
-              <a href="#contact" class="navbar__link">Контакты</a>
-            </li>
-          </ul>
-      </nav>
-      <!-- /.navbar -->
-
-      <div class="scroll-down">
-        <div class="scroll-down__arrow"></div>
+<body>
+  <header id="home" class="header bg-dark">
+    <nav class="navbar">
+      <div class="logo navbar__logo">
+        <a href="https://kibo13.github.io/" class="logo__link">B</a>
       </div>
-      <!-- /.mouse -->
-    </header>
-    <!-- /.header -->
 
-    <main class="main">
-      <section id="resume" class="resume section bg-light">
-        <div class="container">
-          <h2 class="section__title">Резюме</h2>
-          <div class="timeline">
-            <div class="timeline__item timeline__item-right">
-              <i
-                class="fas fa-graduation-cap timeline__dot timeline__dot-right"
-              ></i>
-              <span class="timeline__date">2010 - 2016</span>
-              <h4 class="timeline__title">Высшее образование</h4>
-              <span class="timeline__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                soluta perspiciatis, dolorem incidunt atque ullam numquam,
-                nostrum dolor aperiam ducimus modi voluptates, placeat enim et.
-                Deserunt iusto alias exercitationem quod amet. Minus ducimus
-                nostrum quaerat ea praesentium facilis impedit molestiae quo
-                possimus provident. Iste vero error quia suscipit, mollitia
-                tenetur.
-              </span>
-            </div>
-            <!-- /.timeline__item-01 -->
+      <input type="checkbox" id="burger" class="navbar__checkbox">
+      <label for="burger" class="navbar__btn">
+        <div class="navbar__icon"></div>
+      </label>
 
-            <div class="timeline__item timeline__item-left">
-              <i class="fas fa-briefcase timeline__dot timeline__dot-left"></i>
-              <span class="timeline__date">2010 - 2019</span>
-              <h4 class="timeline__title">Опыт работы</h4>
-              <span class="timeline__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                soluta perspiciatis, dolorem incidunt atque ullam numquam,
-                nostrum dolor aperiam ducimus modi voluptates, placeat enim et.
-                Deserunt iusto alias exercitationem quod amet. Minus ducimus
-                nostrum quaerat ea praesentium facilis impedit molestiae quo
-                possimus provident. Iste vero error quia suscipit, mollitia
-                tenetur.
-              </span>
-            </div>
-            <!-- /.timeline__item-02 -->
+      <ul class="navbar__list">
+        <li class="navbar__item active">
+          <a href="#home" class="navbar__link">Главная</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#resume" class="navbar__link">Резюме</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#portfolio" class="navbar__link">Портфолио</a>
+        </li>
+        <li class="navbar__item">
+          <a href="#contact" class="navbar__link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
 
-            <div class="timeline__item timeline__item-right">
-              <i class="fas fa-cog timeline__dot timeline__dot-right"></i>
-              <span class="timeline__date">2010 - 2013</span>
-              <h4 class="timeline__title">Навыки</h4>
-              <span class="timeline__text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
-                soluta perspiciatis, dolorem incidunt atque ullam numquam,
-                nostrum dolor aperiam ducimus modi voluptates, placeat enim et.
-                Deserunt iusto alias exercitationem quod amet. Minus ducimus
-                nostrum quaerat ea praesentium facilis impedit molestiae quo
-                possimus provident. Iste vero error quia suscipit, mollitia
-                tenetur.
-              </span>
-            </div>
-            <!-- /.timeline__item-03 -->
-          </div>
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /#resume.resume section -->
+    <div class="scroll-down">
+      <div class="scroll-down__arrow"></div>
+    </div>
+    <!-- /.scroll-down -->
 
-      <section id="portfolio" class="portfolio section bg-light">
-        <div class="container">
-          <h2 class="section__title">Портфолио</h2>
-          <div class="portfolio__list">
-            <div class="portfolio__item mr-x">
-              <img
-                class="portfolio__img"
-                src="img/work-01.jpg"
-                alt="DEGCOMPANY"
-              />
-              <div class="portfolio__content">
-                <div class="portfolio__info">
-                  <span class="portfolio__title">DEGCOMPANY</span>
-                  <span class="portfolio__text"
-                    >Адативная верстка <br />с применением технологии Flexbox,
-                    Grid</span
-                  >
-                  <a
-                    href="https://kibo13.github.io/degcompany/"
-                    class="portfolio__link"
-                    >Посмотреть</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio__item">
-              <img class="portfolio__img" src="img/work-02.jpg" alt="SKYUP" />
-              <div class="portfolio__content">
-                <div class="portfolio__info">
-                  <span class="portfolio__title">SKYUP</span>
-                  <span class="portfolio__text"
-                    >Адативная верстка <br />с применением сетки Bootstrap</span
-                  >
-                  <a
-                    href="https://kibo13.github.io/skyup/"
-                    class="portfolio__link"
-                    >Посмотреть</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio__item mr-x">
-              <img
-                class="portfolio__img"
-                src="img/work-03.jpg"
-                alt="Фабрика Скинали"
-              />
-              <div class="portfolio__content">
-                <div class="portfolio__info">
-                  <span class="portfolio__title">Фабрика скинали</span>
-                  <span class="portfolio__text"
-                    >Адативная верстка <br />по методологии БЭМ</span
-                  >
-                  <a
-                    href="https://kibo13.github.io/skinali/"
-                    class="portfolio__link"
-                    >Посмотреть</a
-                  >
-                </div>
-              </div>
-            </div>
-
-            <div class="portfolio__item">
-              <img
-                class="portfolio__img"
-                src="img/work-04.jpg"
-                alt="Новый проект"
-              />
-              <div class="portfolio__content">
-                <div class="portfolio__info">
-                  <span class="portfolio__title">ADVOAGENCY</span>
-                  <span class="portfolio__text"
-                    >Адативная верстка <br />с применением технологии
-                    Flexbox</span
-                  >
-                  <a
-                    href="https://kibo13.github.io/advoagency/"
-                    class="portfolio__link"
-                    >Посмотреть</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- /.container -->
-      </section>
-      <!-- /#portfolio.portfolio section -->
-
-      <section id="test" class="test section bg-light">
-        <div class="container">
-          <h2 class="section__title">Эксперименты</h2>
-        </div>
-        <!-- /.container -->
-
-        <div class="test__list">
-          <div class="test__item">
-            <a href="https://codepen.io/catsville_13/" class="test__link">
-              <div class="test__box">
-                <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
-              </div>
-              <span class="test__title">Новый проект</span>
-              <span class="test__text">Анимация прыгающего шарика на JS</span>
-            </a>
-          </div>
-          <!-- /.test__item-01 -->
-
-          <div class="test__item">
-            <a href="https://codepen.io/catsville_13/" class="test__link">
-              <div class="test__box">
-                <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
-              </div>
-              <span class="test__title">Новый проект</span>
-              <span class="test__text">Анимация прыгающего шарика на JS</span>
-            </a>
-          </div>
-          <!-- /.test__item-02 -->
-
-          <div class="test__item">
-            <a href="https://codepen.io/catsville_13/" class="test__link">
-              <div class="test__box">
-                <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
-              </div>
-              <span class="test__title">Новый проект</span>
-              <span class="test__text">Анимация прыгающего шарика на JS</span>
-            </a>
-          </div>
-          <!-- /.test__item-03 -->
-
-          <div class="test__item">
-            <a href="https://codepen.io/catsville_13/" class="test__link">
-              <div class="test__box">
-                <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
-              </div>
-              <span class="test__title">Новый проект</span>
-              <span class="test__text">Анимация прыгающего шарика на JS</span>
-            </a>
-          </div>
-          <!-- /.test__item-04 -->
-        </div>
-        <!-- /.test__list -->
-      </section>
-      <!-- /#test.test section -->
-    </main>
-    <!-- /.main -->
-
-    <footer class="footer section bg-dark">
+    <div class="intro">
       <div class="container">
-        <div class="footer__list">
-          <div class="logo">
-            <a href="https://kibo13.github.io/" class="logo__link">B</a>
+        <div class="intro__list">
+          <h1 class="intro__title">Борис Ким</h1>
+          <p class="intro__text">Frontend разработчик</p>
+          <a href="#" class="intro__btn">Скачать резюме</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.intro -->
+  </header>
+  <!-- /.header -->
+
+  <main class="main">
+    <section id="resume" class="resume section bg-light">
+      <div class="container">
+        <h2 class="section__title">Резюме</h2>
+        <div class="timeline">
+          <div class="timeline__item timeline__item-right">
+            <i class="fas fa-graduation-cap timeline__dot timeline__dot-right"></i>
+            <span class="timeline__date">2010 - 2016</span>
+            <h4 class="timeline__title">Высшее образование</h4>
+            <span class="timeline__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              soluta perspiciatis, dolorem incidunt atque ullam numquam,
+              nostrum dolor aperiam ducimus modi voluptates, placeat enim et.
+              Deserunt iusto alias exercitationem quod amet. Minus ducimus
+              nostrum quaerat ea praesentium facilis impedit molestiae quo
+              possimus provident. Iste vero error quia suscipit, mollitia
+              tenetur.
+            </span>
           </div>
-          <div class="social">
-            <a href="mailto:catsvill.kb@bk.ru" class="social__link">Mail</a>
-            <a href="tel:+77713404056" class="social__link">WhatsApp</a>
-            <a href="https://github.com/kibo13" class="social__link">GitHub</a>
-            <a href="https://codepen.io/catsville_13/" class="social__link"
-              >CodePen</a
-            >
+          <!-- /.timeline__item-01 -->
+
+          <div class="timeline__item timeline__item-left">
+            <i class="fas fa-briefcase timeline__dot timeline__dot-left"></i>
+            <span class="timeline__date">2010 - 2019</span>
+            <h4 class="timeline__title">Опыт работы</h4>
+            <span class="timeline__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              soluta perspiciatis, dolorem incidunt atque ullam numquam,
+              nostrum dolor aperiam ducimus modi voluptates, placeat enim et.
+              Deserunt iusto alias exercitationem quod amet. Minus ducimus
+              nostrum quaerat ea praesentium facilis impedit molestiae quo
+              possimus provident. Iste vero error quia suscipit, mollitia
+              tenetur.
+            </span>
           </div>
-          <div class="author">
-            &copy; 2019 Борис Ким -
-            <a href="mailto:catsvill.kb@bk.ru" class="author__link">Контакты</a>
+          <!-- /.timeline__item-02 -->
+
+          <div class="timeline__item timeline__item-right">
+            <i class="fas fa-cog timeline__dot timeline__dot-right"></i>
+            <span class="timeline__date">2010 - 2013</span>
+            <h4 class="timeline__title">Навыки</h4>
+            <span class="timeline__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
+              soluta perspiciatis, dolorem incidunt atque ullam numquam,
+              nostrum dolor aperiam ducimus modi voluptates, placeat enim et.
+              Deserunt iusto alias exercitationem quod amet. Minus ducimus
+              nostrum quaerat ea praesentium facilis impedit molestiae quo
+              possimus provident. Iste vero error quia suscipit, mollitia
+              tenetur.
+            </span>
+          </div>
+          <!-- /.timeline__item-03 -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /#resume.resume section -->
+
+    <section id="portfolio" class="portfolio section bg-light">
+      <div class="container">
+        <h2 class="section__title">Портфолио</h2>
+        <div class="portfolio__list">
+          <div class="portfolio__item mr-x">
+            <img class="portfolio__img" src="img/work-01.jpg" alt="DEGCOMPANY" />
+            <div class="portfolio__content">
+              <div class="portfolio__info">
+                <span class="portfolio__title">DEGCOMPANY</span>
+                <span class="portfolio__text">Адативная верстка <br />с применением технологии Flexbox,
+                  Grid</span>
+                <a href="https://kibo13.github.io/degcompany/" class="portfolio__link">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="img/work-02.jpg" alt="SKYUP" />
+            <div class="portfolio__content">
+              <div class="portfolio__info">
+                <span class="portfolio__title">SKYUP</span>
+                <span class="portfolio__text">Адативная верстка <br />с применением сетки Bootstrap</span>
+                <a href="https://kibo13.github.io/skyup/" class="portfolio__link">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item mr-x">
+            <img class="portfolio__img" src="img/work-03.jpg" alt="Фабрика Скинали" />
+            <div class="portfolio__content">
+              <div class="portfolio__info">
+                <span class="portfolio__title">Фабрика скинали</span>
+                <span class="portfolio__text">Адативная верстка <br />по методологии БЭМ</span>
+                <a href="https://kibo13.github.io/skinali/" class="portfolio__link">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="img/work-04.jpg" alt="Новый проект" />
+            <div class="portfolio__content">
+              <div class="portfolio__info">
+                <span class="portfolio__title">ADVOAGENCY</span>
+                <span class="portfolio__text">Адативная верстка <br />с применением технологии
+                  Flexbox</span>
+                <a href="https://kibo13.github.io/advoagency/" class="portfolio__link">Посмотреть</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <!-- /.container -->
-    </footer>
-    <!-- /.footer -->
+    </section>
+    <!-- /#portfolio.portfolio section -->
+
+    <section id="test" class="test section bg-light">
+      <div class="container">
+        <h2 class="section__title">Эксперименты</h2>
+      </div>
+      <!-- /.container -->
+
+      <div class="test__list">
+        <div class="test__item">
+          <a href="https://codepen.io/catsville_13/" class="test__link">
+            <div class="test__box">
+              <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
+            </div>
+            <span class="test__title">Новый проект</span>
+            <span class="test__text">Анимация прыгающего шарика на JS</span>
+          </a>
+        </div>
+        <!-- /.test__item-01 -->
+
+        <div class="test__item">
+          <a href="https://codepen.io/catsville_13/" class="test__link">
+            <div class="test__box">
+              <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
+            </div>
+            <span class="test__title">Новый проект</span>
+            <span class="test__text">Анимация прыгающего шарика на JS</span>
+          </a>
+        </div>
+        <!-- /.test__item-02 -->
+
+        <div class="test__item">
+          <a href="https://codepen.io/catsville_13/" class="test__link">
+            <div class="test__box">
+              <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
+            </div>
+            <span class="test__title">Новый проект</span>
+            <span class="test__text">Анимация прыгающего шарика на JS</span>
+          </a>
+        </div>
+        <!-- /.test__item-03 -->
+
+        <div class="test__item">
+          <a href="https://codepen.io/catsville_13/" class="test__link">
+            <div class="test__box">
+              <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
+            </div>
+            <span class="test__title">Новый проект</span>
+            <span class="test__text">Анимация прыгающего шарика на JS</span>
+          </a>
+        </div>
+        <!-- /.test__item-04 -->
+      </div>
+      <!-- /.test__list -->
+    </section>
+    <!-- /#test.test section -->
+  </main>
+  <!-- /.main -->
+
+  <footer class="footer section bg-dark">
+    <div class="container">
+      <div class="footer__list">
+        <div class="logo">
+          <a href="https://kibo13.github.io/" class="logo__link">B</a>
+        </div>
+        <div class="social">
+          <a href="mailto:catsvill.kb@bk.ru" class="social__link">Mail</a>
+          <a href="tel:+77713404056" class="social__link">WhatsApp</a>
+          <a href="https://github.com/kibo13" class="social__link">GitHub</a>
+          <a href="https://codepen.io/catsville_13/" class="social__link">CodePen</a>
+        </div>
+        <div class="author">
+          &copy; 2019 Борис Ким -
+          <a href="mailto:catsvill.kb@bk.ru" class="author__link">Контакты</a>
+        </div>
+      </div>
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
 
 
-    <!-- Options jQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="js/script.js"></script>
-    <!-- END Options jQuery -->
-  </body>
+  <!-- Options jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="js/script.js"></script>
+  <!-- END Options jQuery -->
+</body>
+
 </html>

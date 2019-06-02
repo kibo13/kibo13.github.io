@@ -1,0 +1,63 @@
+.intro
+  position: relative
+  z-index: 1
+  &__list
+    display: flex
+    height: 100vh
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    color: $light-color 
+
+  &__title
+    margin: 0
+    font-size: 60px 
+    letter-spacing: 2px
+    +bold
+  
+  &__text
+    width: 23ch
+    margin-top: 20px
+    margin-bottom: 30px
+    font-family: monospace
+    +bold
+    letter-spacing: 2px
+    font-style: oblique
+    font-size: 20px
+    white-space: nowrap
+    overflow: hidden
+    border-right: 3px solid $link-color
+    animation: flashing-border 0.75s step-end infinite, print-text 5s steps(23) 
+  
+  &__btn
+    text-transform: uppercase
+    +bold
+    font-size: 12px
+    color: $light-color
+    padding: 13px 25px
+    background: $link-color
+    border-radius: 2px
+    transition: .4s
+
+    &:hover
+      color: $link-color
+      background: $light-color
+
+@keyframes flashing-border 
+  0%
+    border-color: $link-color
+  50%
+    border-color: transparent
+  100%
+    border-color: $link-color
+
+@keyframes print-text
+  from 
+    width: 0
+  to
+    width: 23ch
+
+@media (max-width: 440px)
+  .intro
+     &__title
+      font-size: 40px
