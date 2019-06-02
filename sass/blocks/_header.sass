@@ -57,7 +57,7 @@
   &__btn
     position: relative
     margin: 0px 15px
-    z-index: 3
+    z-index: 4
      
   &__list 
     display: flex
@@ -65,6 +65,7 @@
     padding: 0
     background: $dark-color
     transition: .4s
+    z-index: 3
   
   .active
     .navbar__link
@@ -165,11 +166,9 @@
     &__list
       display: none
       position: fixed
-      left: 0
+      top: 0
       right: 0
-      bottom: 0
       left: 0
-      height: 0
       flex-direction: column
       justify-content: center
       align-items: center
