@@ -18,7 +18,7 @@
         <a href="https://kibo13.github.io/" class="logo__link">B</a>
       </div>
 
-      <input type="checkbox" id="burger" class="navbar__checkbox">
+      <input type="checkbox" id="burger" class="navbar__checkbox" />
       <label for="burger" class="navbar__btn">
         <div class="navbar__icon"></div>
       </label>
@@ -120,30 +120,7 @@
       <div class="container">
         <h2 class="section__title">Портфолио</h2>
         <div class="portfolio__list">
-          <div class="portfolio__item mr-x">
-            <img class="portfolio__img" src="img/work-01.jpg" alt="DEGCOMPANY" />
-            <div class="portfolio__content">
-              <div class="portfolio__info">
-                <span class="portfolio__title">DEGCOMPANY</span>
-                <span class="portfolio__text">Адативная верстка <br />с применением технологии Flexbox,
-                  Grid</span>
-                <a href="https://kibo13.github.io/degcompany/" class="portfolio__link">Посмотреть</a>
-              </div>
-            </div>
-          </div>
-
           <div class="portfolio__item">
-            <img class="portfolio__img" src="img/work-02.jpg" alt="SKYUP" />
-            <div class="portfolio__content">
-              <div class="portfolio__info">
-                <span class="portfolio__title">SKYUP</span>
-                <span class="portfolio__text">Адативная верстка <br />с применением сетки Bootstrap</span>
-                <a href="https://kibo13.github.io/skyup/" class="portfolio__link">Посмотреть</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio__item mr-x">
             <img class="portfolio__img" src="img/work-03.jpg" alt="Фабрика Скинали" />
             <div class="portfolio__content">
               <div class="portfolio__info">
@@ -165,6 +142,29 @@
               </div>
             </div>
           </div>
+
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="img/work-01.jpg" alt="DEGCOMPANY" />
+            <div class="portfolio__content">
+              <div class="portfolio__info">
+                <span class="portfolio__title">DEGCOMPANY</span>
+                <span class="portfolio__text">Адативная верстка <br />с применением технологии Flexbox,
+                  Grid</span>
+                <a href="https://kibo13.github.io/degcompany/" class="portfolio__link">Посмотреть</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="portfolio__item">
+            <img class="portfolio__img" src="img/work-02.jpg" alt="SKYUP" />
+            <div class="portfolio__content">
+              <div class="portfolio__info">
+                <span class="portfolio__title">SKYUP</span>
+                <span class="portfolio__text">Адативная верстка <br />с применением сетки Bootstrap</span>
+                <a href="https://kibo13.github.io/skyup/" class="portfolio__link">Посмотреть</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- /.container -->
@@ -174,59 +174,67 @@
     <section id="test" class="test section bg-light">
       <div class="container">
         <h2 class="section__title">Эксперименты</h2>
+
+        <ul class="toggle">
+          <li id="all" class="toggle__btn active">Все работы</li>
+          <li id="css" class="toggle__btn">CSS</li>
+          <li id="js" class="toggle__btn">JavaScript</li>
+          <li id="other" class="toggle__btn">Разное</li>
+        </ul>
+
+        <div class="cards">
+          <input type="button" data-win-id="1" value="Открыть окно">
+          <input type="button" data-win-id="2" value="Открыть окно">
+          <input type="button" data-win-id="3" value="Открыть окно">
+          <input type="button" data-win-id="4" value="Открыть окно">
+        </div>
+        <!-- /.cards -->
       </div>
       <!-- /.container -->
-
-      <div class="test__list">
-        <div class="test__item">
-          <a href="https://codepen.io/catsville_13/" class="test__link">
-            <div class="test__box">
-              <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
-            </div>
-            <span class="test__title">Новый проект</span>
-            <span class="test__text">Анимация прыгающего шарика на JS</span>
-          </a>
-        </div>
-        <!-- /.test__item-01 -->
-
-        <div class="test__item">
-          <a href="https://codepen.io/catsville_13/" class="test__link">
-            <div class="test__box">
-              <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
-            </div>
-            <span class="test__title">Новый проект</span>
-            <span class="test__text">Анимация прыгающего шарика на JS</span>
-          </a>
-        </div>
-        <!-- /.test__item-02 -->
-
-        <div class="test__item">
-          <a href="https://codepen.io/catsville_13/" class="test__link">
-            <div class="test__box">
-              <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
-            </div>
-            <span class="test__title">Новый проект</span>
-            <span class="test__text">Анимация прыгающего шарика на JS</span>
-          </a>
-        </div>
-        <!-- /.test__item-03 -->
-
-        <div class="test__item">
-          <a href="https://codepen.io/catsville_13/" class="test__link">
-            <div class="test__box">
-              <img src="img/work-00.jpg" alt="Скоро" class="test__img" />
-            </div>
-            <span class="test__title">Новый проект</span>
-            <span class="test__text">Анимация прыгающего шарика на JS</span>
-          </a>
-        </div>
-        <!-- /.test__item-04 -->
-      </div>
-      <!-- /.test__list -->
     </section>
     <!-- /#test.test section -->
   </main>
   <!-- /.main -->
+
+  <div id="modal" class="modal">
+    <div class="modal__wrap">
+      <div class="modal__content">
+        <div class="modal__headline">
+          <div class="modal__title">Фабрика скинали</div>
+          <div class="modal__bar">
+            <a href="#" id="link" class="modal__link modal__link-look"><i class="fas fa-link"></i></a>
+            <a id="close" class="modal__link modal__link-close"><i class="fas fa-times"></i></a>
+          </div>
+        </div>
+        <!-- /.modal__headline -->
+
+        <div class="modal__descrip">
+          <div class="modal__item">
+            <span class="modal__bold">Цель:</span>
+            <span class="modal__aim"></span>
+          </div>
+
+          <div class="modal__item">
+            <span class="modal__bold">Что сделано:</span>
+            <span class="modal__todo"></span>
+          </div>
+
+          <div class="modal__item">
+            <span class="modal__bold">Использованные технологии:</span>
+            <span class="modal__tool"></span>
+          </div>
+
+          <div class="modal__item">
+            <span class="modal__bold">Результаты:</span>
+            <span class="modal__result"></span>
+          </div>
+        </div>
+        <!-- /.modal__descrip -->
+      </div>
+    </div>
+
+  </div>
+  <!-- /#modal.modal -->
 
   <footer class="footer section bg-dark">
     <div class="container">
@@ -250,10 +258,10 @@
   </footer>
   <!-- /.footer -->
 
-
   <!-- Options jQuery -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/modal.js"></script>
   <!-- END Options jQuery -->
 </body>
 

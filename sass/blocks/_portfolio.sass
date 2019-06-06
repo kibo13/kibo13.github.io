@@ -2,14 +2,14 @@
   padding-bottom: 0
   
   &__list 
-    display: flex
-    justify-content: center
-    flex-wrap: wrap
+    display: grid    
+    grid-template-columns: 1fr 1fr 
+    grid-auto-rows: auto
+    grid-gap: 30px
 
   &__item
-    flex-basis: 45%
-    margin-bottom: 30px
     position: relative
+    display: flex
     box-shadow: $out-shadow
     overflow: hidden
 
@@ -134,12 +134,10 @@
   to 
     transform: translateX(10em) skewX(-45deg) 
 
-@media (max-width: 1280px)
+@media (max-width: 1024px)
   .portfolio
-    &__item
-      flex-basis: 100%    
-  .mr-x
-    margin-right: 0
+    &__list 
+      grid-template-columns: 1fr
 
 @media (max-width: 545px)
   .portfolio

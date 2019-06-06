@@ -12,6 +12,7 @@ $(document).ready(function () {
 
   $('.navbar__link').on('click', function () {
     $('body').css('overflow', 'auto');
+    $('.modal').css('display', 'none');
     $('#burger').prop('checked', false);
   });
 
