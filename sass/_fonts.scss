@@ -1,29 +1,28 @@
 @font-face {
-  font-family: 'Helvetica Neue Cyr Light';
+  font-family: 'Open Sans Light';
   font-display: swap;
-  src: url('../fonts/HelveticaNeueCyr-Light.eot');
-  src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/HelveticaNeueCyr-Light.woff') format('woff'),
-       url('../fonts/HelveticaNeueCyr-Light.ttf') format('truetype');
-  font-weight: normal;
+  src: url('../fonts/OpenSans-Light.eot');
+  src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light.woff') format('woff'),
+    url('../fonts/OpenSans-Light.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: 'Open Sans Semibold';
   font-display: swap;
-  src: url('../fonts/HelveticaNeueCyr-Medium.eot');
-  src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff'),
-       url('../fonts/HelveticaNeueCyr-Medium.ttf') format('truetype');
+  src: url('../fonts/OpenSans-SemiBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-SemiBold.woff') format('woff'),
+    url('../fonts/OpenSans-SemiBold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @mixin light {
-  font-family: 'Helvetica Neue Cyr Light', monospace;
+  font-family: 'Open Sans Light';
 }
 
 @mixin bold {
-  font-family: 'Helvetica Neue Cyr Medium';
+  font-family: 'Open Sans Semibold';
 }
