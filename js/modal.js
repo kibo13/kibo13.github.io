@@ -16,7 +16,7 @@ window.onload = function () {
 							"title": "Фабрика скинали",
 							"link": "https://kibo13.github.io/skinali/",
 							"aim": "разработать адаптивный сайт с использованием методологии БЭМ.",
-							"todo": "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер и таймлайн. Выполнена оптимизация файлов(изображений, js, css) для уменьшения времени загрузки сайта.",
+							"todo": "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер, адаптивный таймлайн и плавная прокрутка целевой страницы. Выполнена оптимизация файлов(изображений, js, css) для уменьшения времени загрузки сайта.",
 							"tool": "HTML, CSS, SASS, jQuery, JavaScript, GitHub, Photoshop, Yandex Map API, Google PageSpeed Insights.",
 							"result": "освоил разработку сайта по методологии БЭМ. Более детально изучил использование JavaScript/JQuery для создания интерактивных элементов. При работе над проектом активно использовалась система контроля версий Git."
 						},
@@ -24,25 +24,25 @@ window.onload = function () {
 							"title": "Advoagency",
 							"link": "https://kibo13.github.io/advoagency/",
 							"aim": "разработать адаптивный сайт с использованием методологии БЭМ.",
-							"todo": "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер и таймлайн. Выполнена оптимизация файлов(изображений, js, css) для уменьшения времени загрузки сайта.",
-							"tool": "HTML, CSS, SASS, jQuery, JavaScript, GitHub, Photoshop, Yandex Map API, Google PageSpeed Insights.",
+							"todo": "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер и плавная прокрутка целевой страницы. Выполнена оптимизация файлов(изображений, js, css) для уменьшения времени загрузки сайта.",
+							"tool": "HTML, CSS, SASS, JavaScript, jQuery, Photoshop, GitHub, Google PageSpeed Insights.",
 							"result": "освоил разработку сайта по методологии БЭМ. Более детально изучил использование JavaScript/JQuery для создания интерактивных элементов. При работе над проектом активно использовалась система контроля версий Git."
 						},
 						"3": {
 							"title": "Degcompany",
 							"link": "https://kibo13.github.io/degcompany/",
 							"aim": "разработать адаптивный сайт с применением технологии Flexbox и Grid.",
-							"todo": "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер и таймлайн. Выполнена оптимизация файлов(изображений, js, css) для уменьшения времени загрузки сайта.",
-							"tool": "HTML, CSS, SASS, jQuery, JavaScript, GitHub, Photoshop, Yandex Map API, Google PageSpeed Insights.",
-							"result": "освоил разработку сайта по методологии БЭМ. Более детально изучил использование JavaScript/JQuery для создания интерактивных элементов. При работе над проектом активно использовалась система контроля версий Git."
+							"todo": "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер, плавная прокрутка целевой страницы и форма обратной связи с проверкой на корректность вводимых данных (валидация формы).",
+							"tool": "HTML, CSS, SCSS, Koala, JavaScript, jQuery, GitHub",
+							"result": "освоил разработку сайта c применением технологии Flexbox и Grid. Более детально изучил использование JavaScript/JQuery для создания интерактивных элементов."
 						},
 						"4": {
 							"title": "Skyup",
 							"link": "https://kibo13.github.io/skyup/",
 							"aim": "разработать адаптивный сайт с использованием сетки Bootstrap.",
-							"todo": "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер и таймлайн. Выполнена оптимизация файлов(изображений, js, css) для уменьшения времени загрузки сайта.",
-							"tool": "HTML, CSS, SASS, jQuery, JavaScript, GitHub, Photoshop, Yandex Map API, Google PageSpeed Insights.",
-							"result": "освоил разработку сайта по методологии БЭМ. Более детально изучил использование JavaScript/JQuery для создания интерактивных элементов. При работе над проектом активно использовалась система контроля версий Git."
+							"todo": "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер, параллакс эффект и плавная прокрутка целевой страницы.",
+							"tool": "Bootstrap, HTML, CSS, SCSS, Koala, JavaScript, jQuery, GitHub, Google Map API.",
+							"result": "освоил разработку сайта c применением инструментов Bootstrap. Более детально изучил использование JavaScript/JQuery для создания интерактивных элементов."
 						}
           }
         }
@@ -64,19 +64,14 @@ window.onload = function () {
 		mResult.innerHTML = data.result;
 		mModal.style.display = 'flex';
 		body.style.overflow = 'hidden';
-
-		// document.querySelector('section').style.filter = 'blur(2px)'
-		// document.querySelector('section').style.background = 'rgba(0,0,0,.3)'
 	}
 
-	document.querySelector('.cards').addEventListener('click', function (e) {
+	document.querySelector('.portfolio').addEventListener('click', function (e) {
 		let target = e.target;
 
-		// Если клик по рапперу, но не по кнопке с идентификатором - выходим
-		if (!target.closest('input') || target.dataset.winId === undefined)
+		if (!target.closest('.portfolio__link') || target.dataset.winId === undefined)
 			return;
 
-		// Запускаем отрисовку окна
 		openWindow(target);
 	});
 
