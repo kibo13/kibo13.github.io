@@ -72,10 +72,10 @@ $(document).ready(function () {
 
   var typed = new Typed('.intro__text', {
     strings: ["Frontend разработчик", "Веб-дизайнер"],
-    startDelay: 200,
-    typeSpeed: 160,
-    backSpeed: 80,
-    backDelay: 100,
+    startDelay: 500,
+    typeSpeed: 200,
+    backSpeed: 100,
+    backDelay: 200,
     loop: true,
     showCursor: false
   })
