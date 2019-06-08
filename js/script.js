@@ -65,5 +65,20 @@ $(document).ready(function () {
         .end().filter("[href='#" + id + "']").parent().addClass("active");
     }
   });
+
+  /* ============================= */
+  /* connection plugin of typed.js */
+  /* ============================= */
+
+  var typed = new Typed('.intro__text', {
+    strings: ["Frontend разработчик", "Веб-дизайнер"],
+    startDelay: 200,
+    typeSpeed: 160,
+    backSpeed: 80,
+    backDelay: 100,
+    loop: true,
+    showCursor: false
+  })
+
 });
 

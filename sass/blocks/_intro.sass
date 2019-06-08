@@ -12,22 +12,27 @@
   &__title
     margin: 0
     font-size: 60px 
-    letter-spacing: 2px
     +bold
   
   &__text
-    width: 23ch
-    margin-top: 20px
-    margin-bottom: 30px
-    font-family: monospace
+    position: relative
+    height: 30px
+    line-height: 30px
     +bold
-    letter-spacing: 2px
-    font-style: oblique
     font-size: 20px
-    white-space: nowrap
-    overflow: hidden
-    border-right: 3px solid $link-color
-    animation: flashing-border 0.75s step-end infinite, print-text 5s steps(23) 
+    font-style: oblique
+    // width: 22ch
+    // margin-top: 15px
+    // margin-bottom: 25px
+    // font-family: monospace
+    // +bold
+    // letter-spacing: 1px
+    // font-style: oblique
+    // font-size: 20px
+    // white-space: nowrap
+    // overflow: hidden
+    // border-right: 3px solid $link-color
+    // animation: flashing-border 0.75s step-end infinite, print-text 5s steps(22) 
   
   &__btn
     text-transform: uppercase
@@ -42,20 +47,6 @@
     &:hover
       color: $link-color
       background: $light-color
-
-@keyframes flashing-border 
-  0%
-    border-color: $link-color
-  50%
-    border-color: transparent
-  100%
-    border-color: $link-color
-
-@keyframes print-text
-  from 
-    width: 0
-  to
-    width: 23ch
 
 @media (max-width: 440px)
   .intro
