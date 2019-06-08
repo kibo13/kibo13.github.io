@@ -19,8 +19,6 @@
     height: 30px
     line-height: 30px
     +bold
-    font-style: oblique
-    letter-spacing: 1px
     font-size: 20px
   
   &__btn
@@ -37,6 +35,18 @@
       color: $link-color
       background: $light-color
 
+.typed-cursor 
+  color: $link-color
+  animation: blink 1s step-end infinite 
+    
+@keyframes blink 
+  0%
+    opacity: 1
+  50%
+    opacity: .5
+  100% 
+    opacity: 1
+    
 @media (max-width: 440px)
   .intro
      &__title

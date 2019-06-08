@@ -70,15 +70,35 @@ $(document).ready(function () {
   /* connection plugin of typed.js */
   /* ============================= */
 
-  var typed = new Typed('.intro__text', {
-    strings: ["Frontend разработчик", "Веб-дизайнер"],
+  var typed = new Typed('.typed', {
+    strings: ["Frontend разработчик"],
     startDelay: 500,
-    typeSpeed: 200,
-    backSpeed: 100,
-    backDelay: 200,
-    loop: true,
-    showCursor: false
+    typeSpeed: 200
   })
+
+  /* ================================= */
+  /* options for toggler block of test */
+  /* ================================= */
+
+  $('.toggle__btn').on('click', function () {
+    var get_id = this.id,
+      get_current = $('.test__list .' + get_id);
+
+    $('.test__list .test__item').not(get_current).hide(500);
+    get_current.show(500);
+  });
+
+  $('#all').on('click', function () {
+    $('.test__list .test__item').show(500);
+  });
+
+  var follow_btn = $('.toggle__btn');
+
+  follow_btn.on('click', function () {
+    follow_btn.removeClass('active');
+    $(this).addClass('active');
+  });
+
 
 });
 
