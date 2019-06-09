@@ -4,6 +4,22 @@ $(document).ready(function () {
   /* fade checkbox for resize window */
   /* =============================== */
 
+  
+
+  /* ============================= */
+  /* connection plugin of typed.js */
+  /* ============================= */
+
+  var typed = new Typed('.typed', {
+    strings: ["Frontend разработчик"],
+    startDelay: 500,
+    typeSpeed: 200
+  })
+
+  /* =============================== */
+  /* fade checkbox for resize window */
+  /* =============================== */
+
   $(window).on('resize', function () {
     if ($(window).width() > 630) {
       $('#burger').prop('checked', false);
@@ -66,16 +82,6 @@ $(document).ready(function () {
     }
   });
 
-  /* ============================= */
-  /* connection plugin of typed.js */
-  /* ============================= */
-
-  var typed = new Typed('.typed', {
-    strings: ["Frontend разработчик"],
-    startDelay: 500,
-    typeSpeed: 200
-  })
-
   /* ================================= */
   /* options for toggler block of test */
   /* ================================= */
@@ -98,7 +104,6 @@ $(document).ready(function () {
     follow_btn.removeClass('active');
     $(this).addClass('active');
   });
-
 
 });
 
