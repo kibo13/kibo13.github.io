@@ -11,12 +11,34 @@ li
 
 .logo 
   &__link
+    position: relative
     display: block
     +bold
-    font-size: 30px
-    padding: 3px 10px
-    color: $dark-color
-    background: $link-color
+    width: 40px
+    height: 40px
+    font-size: 40px
+    color: rgba($dark-color, .2)
+    background: $link-color   
+    overflow: hidden
+
+    &::before,
+    &::after
+      position: absolute
+      display: block
+      font-size: 55px
+    &::after
+      content: '›'
+      top: -17px
+      left: 3px
+    &::before
+      content: ''
+      bottom: 8px
+      right: 6px
+      width: 12px
+      height: 12px
+      border: 5px solid rgba($dark-color, .2)
+      border-left: transparent
+      border-radius: 0px 6px 6px 0
 
 .container
   width: 80%
