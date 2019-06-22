@@ -1,0 +1,68 @@
+.preloader 
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  width: 100%
+  height: 100%
+  background: $dark-color
+  transition: 1s all
+  opacity: 1
+  visibility: visible
+  z-index: 10
+
+  &__logo 
+    position: relative
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 120px
+    height: 120px
+    background: $link-color
+    overflow: hidden
+
+  &__char
+    width: 50px
+    height: 65px
+    border: 15px solid rgba($dark-color, .25)
+    
+    &--k
+      position: absolute
+      top: -48px
+      left: 13px
+      border: transparent
+      font-size: 155px
+      +bold
+      color: rgba($dark-color, .25)
+      animation: spinK ease-in-out 3.5s infinite
+
+    &--b
+      border-left: transparent
+      border-radius: 0 15px 15px 0
+      margin-left: 35px
+      animation: spinB ease-in-out 3.5s infinite
+
+.done
+  opacity: 0
+  visibility: hidden
+
+@keyframes spinK
+  0%
+    transform: translateX(0px) rotateY(0deg) 
+  50%
+    transform: translateX(50px) rotateY(180deg) 
+  100%
+    transform: translateX(0) rotateY(0deg) 
+
+@keyframes spinB
+  0%
+    transform: translateX(0px)
+  50%
+    transform: translateX(-35px)
+  100%
+    transform: translateX(0)

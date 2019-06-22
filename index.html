@@ -12,6 +12,18 @@
 </head>
 
 <body>
+  <!-- Options JavaScript -->
+  <script src="js/sleep.js"></script>
+  <!-- END Options JavaScript -->
+
+  <div id="preloader" class="preloader">
+    <div class="preloader__logo">
+      <span class="preloader__char preloader__char--k">›</span>
+      <span class="preloader__char preloader__char--b"></span>
+    </div>
+  </div>
+  <!-- /#preloader.preloader -->
+
   <header id="home" class="header bg-dark">
     <nav class="navbar">
       <div class="logo navbar__logo">
@@ -211,7 +223,7 @@
     <div class="modal__wrap">
       <div class="modal__content">
         <div class="modal__headline">
-          <div class="modal__title">Фабрика скинали</div>
+          <div id="title" class="modal__title">Фабрика скинали</div>
           <div class="modal__bar">
             <a href="#" id="link" class="modal__link modal__link-look"><i class="fas fa-link"></i></a>
             <a id="close" class="modal__link modal__link-close"><i class="fas fa-times"></i></a>
@@ -222,22 +234,22 @@
         <div class="modal__descrip">
           <div class="modal__item">
             <span class="modal__bold">Цель:</span>
-            <span class="modal__aim"></span>
+            <span id="aim" class="modal__aim"></span>
           </div>
 
           <div class="modal__item">
             <span class="modal__bold">Что сделано:</span>
-            <span class="modal__todo"></span>
+            <span id="todo" class="modal__todo"></span>
           </div>
 
           <div class="modal__item">
             <span class="modal__bold">Использованные технологии:</span>
-            <span class="modal__tool"></span>
+            <span id="tool" class="modal__tool"></span>
           </div>
 
           <div class="modal__item">
             <span class="modal__bold">Результаты:</span>
-            <span class="modal__result"></span>
+            <span id="result" class="modal__result"></span>
           </div>
         </div>
         <!-- /.modal__descrip -->
@@ -269,12 +281,11 @@
   </footer>
   <!-- /.footer -->
 
-  <!-- Options jQuery -->
+  <!-- Options jQuery, JavaScript -->
   <script src="js/jquery.min.js"></script>
   <script src="js/typed.min.js"></script>
   <script src="js/script.js"></script>
-  <script src="js/modal.js"></script>
-  <!-- END Options jQuery -->
+  <!-- END Options jQuery, JavaScript -->
 </body>
 
 </html>
