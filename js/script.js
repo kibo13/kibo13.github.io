@@ -103,32 +103,11 @@ $(document).ready(function () {
     $(this).addClass('active');
   });
 
-});
-
-/* ====================== */
-/*   Options JavaScript   */
-/* ====================== */
-
-  /* ============ */
-  /*   preloader  */
-  /* ============ */
-
-  document.body.onload = function () {
-    setTimeout(function () {
-      let preloader = document.getElementById('preloader');
-      if (!preloader.classList.contains('done')) {
-        preloader.classList.add('done');
-      }
-    }, 1000);
-  }
-
-$(document).ready(function () {
-
-  const BODY = document.querySelector('body');
-
   /* ========= */
   /*   modal   */
   /* ========= */
+
+  const BODY = document.querySelector('body');
 
   var mModal  = document.getElementById('modal'),
       mInput  = document.getElementById('m-input'),

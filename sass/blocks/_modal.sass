@@ -1,6 +1,6 @@
 .modal
 	display: none
-	// display: flex
+	
 	justify-content: center
 	align-items: center
 
@@ -14,6 +14,7 @@
 	height: auto
 
 	background: rgba($dark-color, .7)
+	user-select: none
 	z-index: 1
 
 	&__wrap
@@ -35,7 +36,7 @@
 	box-shadow: $out-shadow
 
 	&__panel
-		padding: 0px 5px
+		padding: 0px 15px
 
 		display: flex
 		justify-content: flex-start
@@ -47,31 +48,34 @@
 		border-bottom: 1px solid rgba($dark-color, .3)
 		border-radius: 6px 6px 0 0 
 
-		*
-			margin: 0px 10px
+	&__dot 
+		margin-right: 10px
+		display: block
 
-		& span 
-			display: flex
-			justify-content: center
+		width: 13px
+		height: 13px
 
-			width: 20px
-			height: 20px
-				
-			& img 
-				width: 100%
-				height: 100%
+		border-radius: 50%
+		box-shadow: inset 1px 1px 2px 0 rgba(0,0,0,0.65)
 
-		& input 
-			padding: 5px 7px
-			width: 100%
+		&--R
+			background: radial-gradient(circle at 40% 60%, rgba(205, 220, 57, 0.1), #f44336)
+		&--Y
+			background: radial-gradient(circle at 40% 60%, rgba(205, 220, 57, 0.1), #ffc400)
+		&--G
+			background: radial-gradient(circle at 40% 60%, rgba(205, 220, 57, 0.1), #76ff03)
 
-			+arimo
-			font-size: 14px
+	&__input 
+		margin-left: 5px
+		padding: 5px 7px
+		flex: 1
+		+arimo
+		font-size: 14px
 
-			border-radius: 6px
-			border: 1px solid rgba($dark-color, .15)
-			outline: transparent
-			background: #fafafa	
+		border-radius: 6px
+		border: 1px solid rgba($dark-color, .15)
+		outline: transparent
+		background: #fafafa	
 		
 	&__pic 	
 		width: 100%

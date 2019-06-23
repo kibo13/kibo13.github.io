@@ -2,14 +2,18 @@
   padding-bottom: 0
   
   &__list 
-    display: grid    
-    grid-template-columns: 1fr 1fr
-    grid-auto-rows: auto
-    grid-gap: 30px
+    display: flex
+    flex-wrap: wrap
+
+    margin: 0 -10px
 
   &__item
     position: relative
+
     display: flex
+    flex-basis: calc(50% - 20px)
+    margin: 10px
+
     box-shadow: $out-shadow
     overflow: hidden
 
@@ -137,12 +141,8 @@
 
 @media (max-width: 760px)
   .portfolio
-    &__list 
-      grid-template-columns: 1fr
-    &__title
-      font-size: 16px
-    &__link
-      font-size: 10px
+    &__item
+      flex-basis: 100%
 
 
 
