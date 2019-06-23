@@ -109,8 +109,6 @@ $(document).ready(function () {
 /*   Options JavaScript   */
 /* ====================== */
 
-const BODY = document.querySelector('body');
-
   /* ============ */
   /*   preloader  */
   /* ============ */
@@ -124,6 +122,9 @@ const BODY = document.querySelector('body');
     }, 1000);
   }
 
+$(document).ready(function () {
+
+  const BODY = document.querySelector('body');
 
   /* ========= */
   /*   modal   */
@@ -216,3 +217,5 @@ const BODY = document.querySelector('body');
     mModal.style.display = 'none';
     BODY.style.overflow = 'auto';
   });
+
+});
