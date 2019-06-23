@@ -19,10 +19,25 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Arimo Regular';
+  font-display: swap;
+  src: url('../fonts/Arimo.eot');
+  src: url('../fonts/Arimo.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arimo.woff') format('woff'),
+    url('../fonts/Arimo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @mixin light {
   font-family: 'Open Sans Light';
 }
 
 @mixin bold {
   font-family: 'Open Sans Semibold';
+}
+
+@mixin arimo {
+  font-family: 'Arimo Regular';
 }

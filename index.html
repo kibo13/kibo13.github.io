@@ -81,7 +81,7 @@
             <div class="portfolio__content">
               <div class="portfolio__info">
                 <span class="portfolio__title">Фабрика скинали</span>
-                <a data-win-id="1" class="portfolio__link">Посмотреть</a>
+                <a data-win-id="1" class="portfolio__link">Подробнее</a>
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@
             <div class="portfolio__content">
               <div class="portfolio__info">
                 <span class="portfolio__title">ADVOAGENCY</span>
-                <a data-win-id="2" class="portfolio__link">Посмотреть</a>
+                <a data-win-id="2" class="portfolio__link">Подробнее</a>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@
             <div class="portfolio__content">
               <div class="portfolio__info">
                 <span class="portfolio__title">DEGCOMPANY</span>
-                <a data-win-id="3" class="portfolio__link">Посмотреть</a>
+                <a data-win-id="3" class="portfolio__link">Подробнее</a>
               </div>
             </div>
           </div>
@@ -114,7 +114,7 @@
             <div class="portfolio__content">
               <div class="portfolio__info">
                 <span class="portfolio__title">SKYUP</span>
-                <a data-win-id="4" class="portfolio__link">Посмотреть</a>
+                <a data-win-id="4" class="portfolio__link">Подробнее</a>
               </div>
             </div>
           </div>
@@ -221,41 +221,37 @@
 
   <div id="modal" class="modal">
     <div class="modal__wrap">
-      <div class="modal__content">
-        <div class="modal__headline">
-          <div id="title" class="modal__title">Фабрика скинали</div>
-          <div class="modal__bar">
-            <a href="#" id="link" class="modal__link modal__link-look"><i class="fas fa-link"></i></a>
-            <a id="close" class="modal__link modal__link-close"><i class="fas fa-times"></i></a>
-          </div>
+
+      <div class="brow">
+        <div class="brow__panel">
+          <span><img src="img/icon/left-arrow.png" alt=""></span>
+          <span><img src="img/icon/right-arrow.png" alt=""></span>
+          <span><img src="img/icon/refresh.png" alt=""></span>
+          <input disabled type="text" id="m-input"> 
+          <span><img src="img/icon/menu.png" alt=""></span>
         </div>
-        <!-- /.modal__headline -->
-
-        <div class="modal__descrip">
-          <div class="modal__item">
-            <span class="modal__bold">Цель:</span>
-            <span id="aim" class="modal__aim"></span>
-          </div>
-
-          <div class="modal__item">
-            <span class="modal__bold">Что сделано:</span>
-            <span id="todo" class="modal__todo"></span>
-          </div>
-
-          <div class="modal__item">
-            <span class="modal__bold">Использованные технологии:</span>
-            <span id="tool" class="modal__tool"></span>
-          </div>
-
-          <div class="modal__item">
-            <span class="modal__bold">Результаты:</span>
-            <span id="result" class="modal__result"></span>
-          </div>
+        <div class="brow__pic">
+          <img id="m-img" src="" alt="">
         </div>
-        <!-- /.modal__descrip -->
       </div>
-    </div>
 
+      <div class="content">
+        <a id="m-close" class="content__close">&#215;</a>
+        <div class="content__info">
+          <h2 id="m-title" class="content__title">Название проекта</h2>
+          <div class="content__descrip">
+            <p class="content__name">Цель: <span id="m-aim" class="content__text"></span></p>
+            <p class="content__name">Реализовано: <span id="m-todo" class="content__text"></span></p>
+            <p class="content__name">Технологии: <span id="m-tool" class="content__text"></span></p>
+            <p class="content__name">Результаты: <span id="m-result" class="content__text"></span></p>
+            <p class="content__name">Ссылка на сайт: <a href="#" id="m-link" class="content__text"></a></p>
+          </div>
+        </div>
+      </div>
+      <!-- /.content -->
+
+    </div>
+    <!-- /.wrap -->
   </div>
   <!-- /#modal.modal -->
 
