@@ -2,6 +2,8 @@
   position: relative
   width: 100%
   height: 100vh
+  padding-top: 0
+  padding-bottom: 0
 
 .scroll-down
   position: absolute
@@ -54,9 +56,10 @@
     transition: .4s
     z-index: 4
   
-  .active
-    .navbar__link
+  & .active
+    & .navbar__link
       color: #ffffff
+      
       &::before
         height: 3px
         width: 100%

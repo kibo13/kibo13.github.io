@@ -42,43 +42,43 @@ $(document).ready(function () {
   /* control active link on scroll */
   /* ============================= */
 
-  // var lastId,
-  //   topMenu = $(".navbar__list"),
-  //   topMenuHeight = topMenu.outerHeight() + 15,
-  //   // All list items
-  //   menuItems = topMenu.find("a"),
-  //   // Anchors corresponding to menu items
-  //   scrollItems = menuItems.map(function () {
-  //     var item = $($(this).attr("href"));
-  //     if (item.length) { return item; }
-  //   });
+  var lastId,
+    topMenu = $(".navbar__list"),
+    topMenuHeight = topMenu.outerHeight() + 15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function () {
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
 
-  // menuItems.click(function (e) {
-  //   var href = $(this).attr("href"),
-  //     offsetTop = href === "#" ? 0 : $(href).offset().top;
-  //   $('html, body').stop().animate({
-  //     scrollTop: offsetTop 
-  //   }, 1500);
-  //   e.preventDefault();
-  // });
+  menuItems.click(function (e) {
+    var href = $(this).attr("href"),
+      offsetTop = href === "#" ? 0 : $(href).offset().top;
+    $('html, body').stop().animate({
+      scrollTop: offsetTop 
+    }, 1500);
+    e.preventDefault();
+  });
 
-  // $(window).scroll(function () {
-  //   var fromTop = $(this).scrollTop() + topMenuHeight;
-  //   var cur = scrollItems.map(function () {
-  //     if ($(this).offset().top < fromTop)
-  //       return this;
-  //   });
+  $(window).scroll(function () {
+    var fromTop = $(this).scrollTop() + topMenuHeight;
+    var cur = scrollItems.map(function () {
+      if ($(this).offset().top < fromTop)
+        return this;
+    });
 
-  //   cur = cur[cur.length - 1];
-  //   var id = cur && cur.length ? cur[0].id : "";
+    cur = cur[cur.length - 1];
+    var id = cur && cur.length ? cur[0].id : "";
 
-  //   if (lastId !== id) {
-  //     lastId = id;
-  //     menuItems
-  //       .parent().removeClass("active")
-  //       .end().filter("[href='#" + id + "']").parent().addClass("active");
-  //   }
-  // });
+    if (lastId !== id) {
+      lastId = id;
+      menuItems
+        .parent().removeClass("active")
+        .end().filter("[href='#" + id + "']").parent().addClass("active");
+    }
+  });
 
   /* ================================= */
   /* options for toggler block of test */
@@ -109,20 +109,21 @@ $(document).ready(function () {
 /*   Options JavaScript   */
 /* ====================== */
 
-window.onload = function () {
-
-  const BODY = document.querySelector('body');
+const BODY = document.querySelector('body');
 
   /* ============ */
   /*   preloader  */
-  /* ============ */ 
+  /* ============ */
 
-  setTimeout(function () {
-    let preloader = document.getElementById('preloader');
-    if (!preloader.classList.contains('done')) {
-      preloader.classList.add('done');
-    } 
-  }, 1000);
+  document.body.onload = function () {
+    setTimeout(function () {
+      let preloader = document.getElementById('preloader');
+      if (!preloader.classList.contains('done')) {
+        preloader.classList.add('done');
+      }
+    }, 1000);
+  }
+
 
   /* ========= */
   /*   modal   */
@@ -215,5 +216,3 @@ window.onload = function () {
     mModal.style.display = 'none';
     BODY.style.overflow = 'auto';
   });
-
-}
