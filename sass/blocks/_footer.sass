@@ -18,10 +18,8 @@
   margin: 30px -15px
 
   &__link
-    position: relative
-
     flex-basis: calc(100%/8 - 30px)
-    margin: 5px 15px
+    margin: 7px 15px
 
     display: block
 
@@ -29,11 +27,14 @@
     font-size: 18px
     letter-spacing: 1px
     color: $light-color
-   
+
+  &__line
+    position: relative
+
     &::before
       content: ''
       position: absolute
-      bottom: -5px
+      bottom: -2px
       right: 0
       width: 0%
       height: 2px
