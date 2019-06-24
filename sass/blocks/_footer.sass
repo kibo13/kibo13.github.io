@@ -5,7 +5,7 @@
     justify-content: center
     align-items: center
     margin-bottom: 10px
-  
+ 
   & .logo__link
     width: 60px
     height: 60px
@@ -13,23 +13,23 @@
 .social 
   display: flex
   flex-wrap: wrap
-  justify-content: center
-  align-items: center
   text-align: center
-  margin: 30px 0
+
+  margin: 30px -15px
 
   &__link
-    display: block
     position: relative
-    margin: 0px 20px
+
+    flex-basis: calc(100%/8 - 30px)
+    margin: 5px 15px
+
+    display: block
+
     +bold
     font-size: 18px
     letter-spacing: 1px
     color: $light-color
-
-    &:last-child 
-      margin-right: 0
-    
+   
     &::before
       content: ''
       position: absolute
@@ -53,8 +53,12 @@
     color: $light-color
     font-size: 13px
 
-@media (max-width: 530px)
+@media (max-width: 600px)
   .social
     &__link
-      flex-basis: 50%
-      margin: 10px 0
+      flex-basis: calc(100%/2 - 30px)
+
+@media (max-width: 375px) 
+  .social
+    &__link
+      flex-basis: 100%
