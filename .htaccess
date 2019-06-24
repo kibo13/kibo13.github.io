@@ -1,2 +1,2 @@
 AddDefaultCharset UTF-8
-ErrorDocument 404 /fault.html
+ErrorDocument 404 https://github.com/kibo13/kibo13.github.io/blob/master/fault.html
