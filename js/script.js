@@ -143,7 +143,7 @@ $(document).ready(function () {
 						"3": {
               "title"  : "Degcompany",
               "img"    : "img/modal/modal-01.jpg",
-							"link"   : "https://kibo13.github.io/degcompany/",
+							"link"   : "https://github.com/kibo13/wbk-degcompany",
 							"aim"    : "разработать адаптивный сайт с применением технологии Flexbox и Grid.",
 							"todo"   : "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер, плавная прокрутка целевой страницы и форма обратной связи с проверкой на корректность вводимых данных (валидация формы).",
 							"tool"   : "HTML, CSS, SCSS, Koala, JavaScript, jQuery, GitHub",
@@ -152,7 +152,7 @@ $(document).ready(function () {
 						"4": {
               "title"  : "Skyup",
               "img"    : "img/modal/modal-02.jpg",
-							"link"   : "https://kibo13.github.io/skyup/",
+							"link"   : "https://github.com/kibo13/wbk-skyup",
 							"aim"    : "разработать адаптивный сайт с использованием сетки Bootstrap.",
 							"todo"   : "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер, параллакс эффект и плавная прокрутка целевой страницы.",
 							"tool"   : "Bootstrap, HTML, CSS, SCSS, Koala, JavaScript, jQuery, GitHub, Google Map API.",
