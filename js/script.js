@@ -134,7 +134,7 @@ $(document).ready(function () {
 						"2": {
               "title"  : "Advoagency",
               "img"    : "img/modal/modal-03.jpg",
-							"link"   : "https://kibo13.github.io/advoagency/",
+							"link"   : "https://github.com/kibo13/wbk-advoagency",
 							"aim"    : "разработать адаптивный сайт с использованием методологии БЭМ.",
 							"todo"   : "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер и плавная прокрутка целевой страницы. Выполнена оптимизация файлов(изображений, js, css) для уменьшения времени загрузки сайта.",
 							"tool"   : "HTML, CSS, SASS, JavaScript, jQuery, Photoshop, GitHub, Google PageSpeed Insights.",
