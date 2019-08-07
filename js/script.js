@@ -125,7 +125,7 @@ $(document).ready(function () {
 						"1": {
               "title"  : "Фабрика скинали",
               "img"    : "img/modal/modal-04.jpg",
-							"link"   : "https://kibo13.github.io/skinali/",
+							"link"   : "https://github.com/kibo13/wbk-skinali",
 							"aim"    : "разработать адаптивный сайт с использованием методологии БЭМ.",
 							"todo"   : "разработан адаптивный сайт. Добавлены CSS-анимации (прелоадер, ссылки, меню, кнопки), а также слайдер, адаптивный таймлайн и плавная прокрутка целевой страницы. Выполнена оптимизация файлов(изображений, js, css) для уменьшения времени загрузки сайта.",
 							"tool"   : "HTML, CSS, SASS, jQuery, JavaScript, GitHub, Photoshop, Yandex Map API, Google PageSpeed Insights.",
