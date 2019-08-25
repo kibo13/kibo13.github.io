@@ -1,0 +1,60 @@
+// resume 
+.about 
+  display: none
+
+  padding: 10px 0
+
+  position: fixed
+  top: 0
+  left: 0
+  
+  width: 100%
+  height: 100%
+
+  background: rgba($dark-color, .3)
+  overflow-y: auto
+
+  z-index: 4
+
+  /* BEGIN WRAPPER */ 
+  &-wrap 
+    position: relative
+
+    margin: 0 auto 
+    width: 80%
+
+    background-color: #f6f6f6
+    background-image: linear-gradient(315deg, #f6f6f6 0%, #fafafa 74%)
+    border-radius: 2px
+    box-shadow: 0 0 10px 
+
+  /* END WRAPPER */
+
+  /* BEGIN AUTHOR'S PHOTO */
+  &-avatar 
+    margin: 0 auto
+    display: block
+
+    // width: 180px
+    // height: 180px
+
+    // border-radius: 50%
+    // box-shadow: 0 0 4px
+
+    overflow: hidden
+
+    // &:hover 
+    //   cursor: pointer
+      
+    //   .about-avatar__photo 
+    //     transform: scale(1.7) translateY(10px)
+
+    &__photo 
+      width: 100%
+      object-fit: cover
+      transition: .3s
+
+  /* END AUTHOR'S PHOTO */
+
+  // .col-sm-12
+  //   border: 1px dashed #2676FF

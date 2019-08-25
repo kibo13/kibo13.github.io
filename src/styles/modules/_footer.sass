@@ -1,0 +1,75 @@
+// footer 
+.footer 
+  padding: 30px 0 15px
+
+  &-info 
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    line-height: 1.15em
+    user-select: none
+  
+  // left part 
+  &-left 
+    // year 
+    &__year 
+      margin-left: 2px
+    
+  // right part 
+  &-right 
+    display: flex
+    justify-content: center
+    align-items: center
+
+    // logotype 
+    &__logo 
+      margin-right: 7px
+      width: 26px
+      height: 26px
+    
+    // icon logotype 
+    &__icon 
+      width: 100%
+
+    // group text 
+    &__group 
+      display: flex
+      flex-direction: column
+    
+    // link
+    &__link 
+      color: $dark-color
+
+// media 
+@media (max-width: $mobileWidth)
+  .footer 
+    &-info
+      display: flex
+      flex-direction: column-reverse
+      text-align: center
+    // left part 
+    &-left 
+      display: flex
+
+      &__prot 
+        margin-left: 5px
+
+    // right part 
+    &-right 
+      display: flex
+      flex-direction: column
+
+      &__logo 
+        margin-right: 0
+        margin-bottom: 7px
+        width: 36px
+        height: 36px
+      
+      &__group 
+        display: flex
+        flex-direction: row
+      
+      &__link 
+        margin-left: 5px
+        margin-bottom: 2px

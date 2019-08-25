@@ -1,0 +1,93 @@
+// portfolio 
+.works 
+  padding-top: 0
+
+  /* BEGIN CARDS */
+  &-item
+    position: relative
+    margin: 1em
+    padding: 1.5em
+
+    background: #ffffff
+    box-shadow: 0 0 4px
+    transition: .3s
+    user-select: none
+
+    &:hover
+      cursor: pointer
+      box-shadow: 1px 1px 17px 1px rgba($dark-color, .7)
+
+      .works-item__info
+        transition-delay: .2s
+        height: 100%
+
+    // container with data 
+    &__content
+      position: relative
+      display: flex
+      flex-direction: column
+      justify-content: flex-start
+      align-items: center
+
+    // photo frame 
+    &__frame 
+      margin-bottom: 70px
+      width: 100%
+      overflow: hidden
+
+    // photo 
+    &__photo 
+      width: 100%
+      object-fit: cover
+    
+    // info panel 
+    &__info 
+      position: absolute
+      bottom: 0
+
+      width: 100%
+      height: 52px
+
+      text-align: center
+      font-family: monospace
+
+      background: #ffffff
+      transition: .4s
+      overflow: hidden
+    
+    // title of project 
+    &__title 
+      text-transform: capitalize
+      font-family: $caveat-font
+      font-size: 1.85em
+
+    // date publication 
+    &__date 
+      text-transform: lowercase
+      font-family: $caveat-font
+      font-size: 1.3em
+
+      &--year
+        font-size: .78em !important
+    
+    // group links 
+    &__group 
+      margin: 0.7em 0 1em
+      display: flex
+      justify-content: space-around
+    
+    &__link
+      text-transform: capitalize
+      font-family: monospace
+      font-size: 1.15em
+
+      color: $dark-color
+      border-bottom: 1px dashed $dark-color
+      transition: .25s
+
+      &:hover
+        font-weight: bold
+        color: $link-color
+        border-bottom: 1px dashed $link-color
+
+  /* END CARDS */

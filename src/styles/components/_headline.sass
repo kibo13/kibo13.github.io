@@ -1,0 +1,47 @@
+// headline 
+.headline
+  margin-bottom: 20px
+  text-align: center
+  font-family: 'ARIAL BLACK'
+  user-select: none
+
+  &__char 
+    position: relative
+    font-size: 3.3em
+    color: #fafafa
+    text-shadow: -1px 0 1px rgba(158, 158, 158, 0.3)
+
+    &::before,
+    &::after
+      content: attr(data-char)
+      position: absolute
+      top: 0
+      left: 0
+      transform-origin: left
+    
+    &::before
+      color: #ffffff
+      transition: .3s cubic-bezier(0,1.88,.83,.67)
+      transform: rotateY(30deg)
+      z-index: 2
+    
+    &::after
+      color: rgba(#000000, .7)
+      transition: .3s cubic-bezier(0,1.88,.83,.67)
+      transform: rotateY(5deg) scale(1.07, 1) skewY(3deg)
+      opacity: 0.5
+      z-index: 1        
+
+    &:hover
+      cursor: pointer
+      &::before
+        transform: perspective(1000px) rotateY(-45deg)
+      &::after
+        transform: rotateY(0) scale(1.11, 1) skewY(6deg)
+
+@media (max-width: $mobileWidth)
+  .headline
+    margin-bottom: 10px
+    
+    &__char
+      font-size: 1.9em

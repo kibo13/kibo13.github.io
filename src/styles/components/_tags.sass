@@ -1,0 +1,42 @@
+// tags 
+.tag 
+  position: absolute
+  top: 35px
+  right: -7px
+
+  padding: 7px 10px
+
+  font-family: monospace
+  font-size: 1em
+  color: $default-color
+
+  box-shadow: 0 0 4px
+  z-index: 3
+
+  &::after 
+    content: ''
+    position: absolute
+    top: -7px
+    right: 0.1px
+
+    width: 0
+    height: 0
+
+    border-bottom: 7px solid $dark-color
+    border-right: 7px solid transparent
+
+  // soon 
+  &--soon 
+    background: $light-color
+  
+  // html
+  &--html 
+    background: $danger-color
+  
+  // css 
+  &--css 
+    background: $primary-color
+  
+  // js 
+  &--js 
+    background: $warning-color
