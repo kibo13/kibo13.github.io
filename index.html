@@ -5,300 +5,409 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Борис Ким - Frontend Developer</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="shortcut icon" href="img/kibo.ico" />
+  <title>Борис Ким - Frontend разработчик</title>
+  <link rel="icon" href="img/static/favicon.ico" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body>
-  <!-- Options JavaScript -->
-  <script src="js/sleep.js"></script>
-  <!-- END Options JavaScript -->
-
-  <div id="preloader" class="preloader">
-    <div class="preloader__logo">
-      <div class="preloader__box">
-        <span class="preloader__char preloader__char--K"></span>
-        <span class="preloader__char preloader__char--B"></span>
-      </div>
-    </div>
-  </div>
-  <!-- /#preloader.preloader -->
-
-  <header id="home" class="header bg-dark">
-    <nav class="navbar">
-
-      <div class="logo navbar__logo">
-        <a href="https://kibo13.github.io/" class="logo__link">
-          <img src="img/kibo.png" class="logo__img" alt="kibo">
+  <header class="header">
+    <nav id="navbar" class="navbar">
+      <div class="container d-flex justify-content-between">
+        <a href="https://kibo13.github.io/" class="navbar-logo">
+          <img src="img/author/logo.png" alt="LOGOTYPE" class="navbar-logo__icon" />
         </a>
-      </div>
+        <!-- /.navbar-logo -->
 
-      <input type="checkbox" id="burger" class="navbar__checkbox" />
-      <label for="burger" class="navbar__btn">
-        <span class="navbar__icon"></span>
-      </label>
-
-      <ul class="navbar__list">
-        <li class="navbar__item active">
-          <a href="#home" class="navbar__link">Главная</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#portfolio" class="navbar__link">Портфолио</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#test" class="navbar__link">Эксперименты</a>
-        </li>
-        <li class="navbar__item">
-          <a href="#contact" class="navbar__link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <!-- /.navbar -->
-
-    <div class="scroll-down">
-      <div class="scroll-down__arrow"></div>
-    </div>
-    <!-- /.scroll-down -->
-
-    <div class="intro">
-      <div class="container">
-        <div class="intro__list">
-          <h1 class="intro__title">Борис Ким</h1>
-          <p class="intro__text"><span class="typed"></span></p>
-          <a href="#" class="intro__btn">Скачать резюме</a>
+        <div class="btn-group d-flex">
+          <div id="html-sort" class="btn" data-index="1" data-hint="Вёрстка">
+            <div class="btn-front">
+              <i class="fab fa-html5 btn-icon btn-icon--html"></i>
+            </div>
+            <button class="btn-back">
+              <i class="fab fa-html5 btn-icon btn-icon--html"></i>
+            </button>
+          </div>
+          <!-- /.btn-sites -->
+          <div id="css-sort" class="btn" data-index="2" data-hint="Элементы">
+            <div class="btn-front">
+              <i class="fab fa-css3-alt btn-icon btn-icon--css"></i>
+            </div>
+            <button class="btn-back">
+              <i class="fab fa-css3-alt btn-icon btn-icon--css"></i>
+            </button>
+          </div>
+          <!-- /.btn-animation -->
+          <div id="js-sort" class="btn" data-index="3" data-hint="Приложения">
+            <div class="btn-front">
+              <i class="fab fa-js btn-icon btn-icon--js"></i>
+            </div>
+            <button class="btn-back">
+              <i class="fab fa-js btn-icon btn-icon--js"></i>
+            </button>
+          </div>
+          <!-- /.btn-app -->
+          <div id="resume-show" class="btn" data-hint="Резюме">
+            <div class="btn-front">
+              <i class="fas fa-user btn-icon"></i>
+            </div>
+            <button class="btn-back">
+              <i class="fas fa-user btn-icon"></i>
+            </button>
+          </div>
+          <!-- /.btn-about -->
         </div>
+        <!-- /.btn-group -->
       </div>
-    </div>
-    <!-- /.intro -->
+      <!-- /.container -->
+    </nav>
+    <!-- /#navbar.navbar -->
   </header>
   <!-- /.header -->
 
   <main class="main">
-    <section id="portfolio" class="portfolio section bg-light">
-      <div class="container">
-        <h2 class="section__title">Портфолио</h2>
-        <div class="portfolio__list">
-
-          <div class="portfolio__item">
-            <img class="portfolio__img" src="img/portfolio/work-03.jpg" alt="Фабрика Скинали" />
-            <div class="portfolio__content">
-              <div class="portfolio__info">
-                <span class="portfolio__title">Фабрика скинали</span>
-                <a data-win-id="1" class="portfolio__link">Подробнее</a>
-              </div>
-            </div>
+    <section id="about" class="about">
+      <div class="container d-flex justify-content-end">
+        <div id="resume-hide" class="btn">
+          <div class="btn-front">
+            <i class="fas fa-user btn-front__icon"></i>
           </div>
-          <!-- /.portfolio__item-01 -->
-
-          <div class="portfolio__item">
-            <img class="portfolio__img" src="img/portfolio/work-04.jpg" alt="ADVOAGENCY" />
-            <div class="portfolio__content">
-              <div class="portfolio__info">
-                <span class="portfolio__title">ADVOAGENCY</span>
-                <a data-win-id="2" class="portfolio__link">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <!-- /.portfolio__item-02 -->
-
-          <div class="portfolio__item">
-            <img class="portfolio__img" src="img/portfolio/work-01.jpg" alt="DEGCOMPANY" />
-            <div class="portfolio__content">
-              <div class="portfolio__info">
-                <span class="portfolio__title">DEGCOMPANY</span>
-                <a data-win-id="3" class="portfolio__link">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <!-- /.portfolio__item-03 -->
-
-          <div class="portfolio__item">
-            <img class="portfolio__img" src="img/portfolio/work-02.jpg" alt="SKYUP" />
-            <div class="portfolio__content">
-              <div class="portfolio__info">
-                <span class="portfolio__title">SKYUP</span>
-                <a data-win-id="4" class="portfolio__link">Подробнее</a>
-              </div>
-            </div>
-          </div>
-          <!-- /.portfolio__item-04 -->
+          <button class="btn-back">
+            <i class="fas fa-times btn-back__icon"></i>
+          </button>
         </div>
+        <!-- /.btn-group -->
+      </div>
+
+      <div class="container d-flex flex-column justify-content-end">
+        <div class="row about-wrap">
+          <div class="col-md-4 col-sm-12 p-0">
+            <div class="about-avatar">
+              <img src="img/author/author.jpg" alt="author" class="about-avatar__photo">
+            </div>
+            <!-- /.about-avatar -->
+          </div>
+          <div class="col-md-8 col-sm-12 py-4">
+            <h2>Борис Ким</h2>
+            <p>Frontend Developer</p>
+          </div>
+          <div class="col-md-4 col-sm-12 py-4">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laboriosam sint? Exercitationem
+              debitis aperiam
+              eveniet consequuntur quos veniam eaque corporis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem commodi earum porro provident adipisci
+              quaerat vel officia, aperiam accusamus illum eligendi labore perspiciatis, nostrum at ratione molestias
+              illo, fugiat iusto error. Autem dolores reprehenderit iste atque laudantium earum aliquid itaque sit eos
+              pariatur dicta consectetur vitae modi rerum minima consequatur labore reiciendis ea sunt aspernatur est,
+              debitis quod quos. Dicta incidunt qui adipisci vel alias cum ut, eum voluptates dolorem, inventore beatae
+              accusamus. Rerum quod voluptate exercitationem laudantium corporis quas facilis quisquam provident quam
+              vero hic similique ducimus alias odio, iure modi maxime sit neque! Quia veniam placeat assumenda facere!
+            </p>
+          </div>
+          <div class="col-md-8 col-sm-12 py-4">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, laboriosam sint? Exercitationem
+              debitis aperiam
+              eveniet consequuntur quos veniam eaque corporis.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste cupiditate eos dolorem dolor. Accusantium
+              consequuntur libero praesentium ab suscipit in mollitia quae illo nobis nulla vel earum explicabo ratione
+              distinctio exercitationem aliquam modi fuga voluptatem hic perferendis porro incidunt, eos nisi ducimus.
+              Voluptates ipsa, laudantium fuga a consequuntur ducimus corporis.</p>
+          </div>
+        </div>
+        <!-- /.row -->
       </div>
       <!-- /.container -->
     </section>
-    <!-- /#portfolio.portfolio section -->
+    <!-- /.about -->
 
-    <section id="test" class="test section bg-light">
+    <section id="works" class="works">
       <div class="container">
-        <h2 class="section__title">Эксперименты</h2>
-
-        <ul class="toggle">
-          <li id="all" class="toggle__btn active"><span>Все работы</span></li>
-          <li id="css" class="toggle__btn"><span>CSS</span></li>
-          <li id="js" class="toggle__btn"><span>JavaScript</span></li>
-          <li id="other" class="toggle__btn"><span>Разное</span></li>
-        </ul>
-
-        <div class="test__list">
-
-          <div class="test__item css">
-            <a href="https://codepen.io/kibo13/full/byXaYd" class="test__link">
-              <span class="test__icon"></span>
-              <img class="test__img" src="img/test/test-01.png" alt="Таймлайн">
-            </a>
-            <h4 class="test__title">Таймлайн</h4>
-          </div>
-          <!-- /.test__item-01 -->
-
-          <div class="test__item js">
-            <a href="https://kibo13.github.io/app-todo-list/" class="test__link">
-              <span class="test__icon"></span>
-              <img class="test__img" src="img/test/test-02.png" alt="Список дел">
-            </a>
-            <h4 class="test__title">Список дел</h4>
-          </div>
-          <!-- /.test__item-02 -->
-
-          <div class="test__item css">
-            <a href="https://codepen.io/kibo13/pen/WqwRJQ" class="test__link">
-              <span class="test__icon"></span>
-              <img class="test__img" src="img/test/test-03.png" alt="Часы">
-            </a>
-            <h4 class="test__title">Часы</h4>
-          </div>
-          <!-- /.test__item-03 -->
-
-          <div class="test__item js">
-            <a href="https://kibo13.github.io/app-calculator/" class="test__link">
-              <span class="test__icon"></span>
-              <img class="test__img" src="img/test/test-04.png" alt="Калькулятор">
-            </a>
-            <h4 class="test__title">Калькулятор</h4>
-          </div>
-          <!-- /.test__item-04 -->
-
-          <div class="test__item other">
-            <a href="#" class="test__link">
-              <span class="test__icon"></span>
-              <img class="test__img" src="img/test/test-00.png" alt="">
-            </a>
-            <h4 class="test__title">Новый проект</h4>
-          </div>
-          <!-- /.test__item-05 -->
-
-          <div class="test__item other">
-            <a href="#" class="test__link">
-              <span class="test__icon"></span>
-              <img class="test__img" src="img/test/test-00.png" alt="">
-            </a>
-            <h4 class="test__title">Новый проект</h4>
-          </div>
-          <!-- /.test__item-06 -->
-
-          <div class="test__item other">
-            <a href="#" class="test__link">
-              <span class="test__icon"></span>
-              <img class="test__img" src="img/test/test-00.png" alt="">
-            </a>
-            <h4 class="test__title">Новый проект</h4>
-          </div>
-          <!-- /.test__item-07 -->
-
-          <div class="test__item other">
-            <a href="#" class="test__link">
-              <span class="test__icon"></span>
-              <img class="test__img" src="img/test/test-00.png" alt="">
-            </a>
-            <h4 class="test__title">Новый проект</h4>
-          </div>
-          <!-- /.test__item-08 -->
-
+        <div class="headline">
+          <span class="headline__char" data-char="П">П</span>
+          <span class="headline__char" data-char="О">О</span>
+          <span class="headline__char" data-char="Р">Р</span>
+          <span class="headline__char" data-char="Т">Т</span>
+          <span class="headline__char" data-char="Ф">Ф</span>
+          <span class="headline__char" data-char="О">О</span>
+          <span class="headline__char" data-char="Л">Л</span>
+          <span class="headline__char" data-char="И">И</span>
+          <span class="headline__char" data-char="О">О</span>
         </div>
-        <!-- /.test__list -->
+        <div class="row works-list">
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="0">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/static/mask.png" alt="" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">Soon</li>
+                  <li class="works-item__date">
+                    current <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="#" class="works-item__link" target="_blank">Info</a>
+                    <a href="#" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Препятствия – это те страшные вещи, которые вы видите,
+                    когда отводите глаза от цели. (Генри Форд)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-01 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/layouts/layout-05.png" alt="Books" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">Books</li>
+                  <li class="works-item__date">
+                    august <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="https://github.com/kibo13/wbk-books" class="works-item__link" target="_blank">Info</a>
+                    <a href="https://kibo13.github.io/wbk-books/" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Вёрстка одностраничного сайта сообщества любителей книг,
+                    объединившихся для расширения cвоих читательских
+                    возможностей и пополнения...
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-02 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="3">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/apps/app-01.png" alt="Calc" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">Calculator</li>
+                  <li class="works-item__date">
+                    june <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="https://github.com/kibo13/app-calculator" class="works-item__link" target="_blank">Info</a>
+                    <a href="https://kibo13.github.io/app-calculator/" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Простенький онлайн-калькулятор, с помощью 
+                    которого можно производить различные математические расчёты.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-03 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="2">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/elements/elem-01.png" alt="Clock" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">Clock</li>
+                  <li class="works-item__date">
+                    june <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="https://codepen.io/kibo13/pen/WqwRJQ" class="works-item__link" target="_blank">Info</a>
+                    <a href="https://codepen.io/kibo13/pen/WqwRJQ" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Простые онлайн часы. В мире нет ничего совершенно ошибочного - 
+                    даже сломанные часы дважды в сутки показывают точное время.
+                    (Пауло Коэльо)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-04 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="3">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/apps/app-02.png" alt="todo" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">To-do List</li>
+                  <li class="works-item__date">
+                    june <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="https://github.com/kibo13/app-todo-list" class="works-item__link" target="_blank">Info</a>
+                    <a href="https://kibo13.github.io/app-todo-list/" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Простое веб-приложение, которое отлично подойдет 
+                    для составления списков задач, покупок, необходимых вещей и т.п.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-05 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/layouts/layout-04.png" alt="" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">Advoagency</li>
+                  <li class="works-item__date">
+                    may <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="https://github.com/kibo13/wbk-advoagency" class="works-item__link" target="_blank">Info</a>
+                    <a href="https://kibo13.github.io/wbk-advoagency/" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Вёрстка одностраничного сайта международной юридической
+                    компании предоставляющей широкий спектр услуг юридическим
+                    организациям...
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-06 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/layouts/layout-03.png" alt="Factory Skinned" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">Factory Skinned</li>
+                  <li class="works-item__date">
+                    may <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="https://github.com/kibo13/wbk-skinali" class="works-item__link" target="_blank">Info</a>
+                    <a href="https://kibo13.github.io/wbk-skinali/" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Вёрстка одностраничного сайта компании специализирующейся
+                    на изготовлении и обработке изделий из стекла и является
+                    одним из основных...
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-07 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/layouts/layout-02.png" alt="Skyup" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">Skyup</li>
+                  <li class="works-item__date">
+                    may <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="https://github.com/kibo13/wbk-skyup" class="works-item__link" target="_blank">Info</a>
+                    <a href="https://kibo13.github.io/wbk-skyup/" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Вёрстка одностраничного сайта одной креативной студии
+                    дизайна полного цикла, с многолетним опытом и сильной
+                    экспертизой в создании сайтов...
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-08 -->
+
+          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+            <div class="works-item">
+              <div class="works-item__content">
+                <div class="works-item__frame">
+                  <img src="img/layouts/layout-01.png" alt="Degcompany" class="works-item__photo" />
+                </div>
+                <ul class="works-item__info">
+                  <li class="works-item__title">Degcompany</li>
+                  <li class="works-item__date">
+                    may <span class="works-item__date--year">2019</span>
+                  </li>
+                  <div class="works-item__group">
+                    <a href="https://github.com/kibo13/wbk-degcompany" class="works-item__link" target="_blank">Info</a>
+                    <a href="https://kibo13.github.io/wbk-degcompany/" class="works-item__link" target="_blank">Link</a>
+                  </div>
+                  <li class="works-item__text">
+                    Вёрстка одностраничного сайта цифрового агентства
+                    специализирующегося на предоставлении полного спектра
+                    услуг в сферах веб-разработки...
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- /.works-item-09 -->
+        </div>
+        <!-- /.row -->
       </div>
       <!-- /.container -->
     </section>
-    <!-- /#test.test section -->
+    <!-- /.works -->
   </main>
   <!-- /.main -->
 
-  <div id="modal" class="modal">
-    <div class="modal__wrap">
-
-      <div class="brow">
-        <div class="brow__panel">
-          <span class="brow__dot brow__dot--R"></span>
-          <span class="brow__dot brow__dot--Y"></span>
-          <span class="brow__dot brow__dot--G"></span>
-          <input disabled type="text" class="brow__input" id="m-input">
-        </div>
-        <div class="brow__pic">
-          <img id="m-img" src="" alt="">
-        </div>
-      </div>
-
-      <div class="content">
-        <a id="m-close" class="content__close">&#215;</a>
-        <div class="content__info">
-          <h2 id="m-title" class="content__title">Название проекта</h2>
-          <div class="content__descrip">
-            <p class="content__name">Цель: <span id="m-aim" class="content__text"></span></p>
-            <p class="content__name">Реализовано: <span id="m-todo" class="content__text"></span></p>
-            <p class="content__name">Технологии: <span id="m-tool" class="content__text"></span></p>
-            <p class="content__name">Результаты: <span id="m-result" class="content__text"></span></p>
-            <p class="content__name">Ссылка на сайт: <a href="#" id="m-link" class="content__text"></a></p>
-          </div>
-        </div>
-      </div>
-      <!-- /.content -->
-
-    </div>
-    <!-- /.wrap -->
-  </div>
-  <!-- /#modal.modal -->
-
-  <footer class="footer section bg-dark">
+  <footer class="footer">
     <div class="container">
-      <div class="footer__list">
+      <div class="footer-info">
 
-        <div class="logo">
-          <a href="https://kibo13.github.io/" class="logo__link">
-            <img src="img/kibo.png" class="logo__img" alt="kibo">
-          </a>
+        <div class="footer-left">
+          <p class="footer-left__copy">&copy;<span class="footer-left__year">2019</span></p>
+          <p class="footer-left__prot">Все права защищены.</p>
         </div>
+        <!-- /.footer-left -->
 
-        <div class="social">
-          <a href="tel:+77713404056" class="social__link">
-            <span class="social__line">WhatsApp</span>
+        <div class="footer-right">
+          <a href="https://kibo13.github.io/" class="footer-right__logo">
+            <img src="img/author/logo.png" alt="LOGOTYPE" class="footer-right__icon">
           </a>
-          <a href="https://codepen.io/kibo13/" class="social__link">
-            <span class="social__line">CodePen</span>
-          </a>
-          <a href="https://github.com/kibo13" class="social__link">
-            <span class="social__line">GitHub</span>
-          </a>
-          <a href="https://hh.kz/resume/08bb6e49ff06737f800039ed1f326865553530" class="social__link">
-            <span class="social__line">HeadHunter</span>
-          </a>
+          <p class="footer-right__group">
+            <span class="footer-right__text">Developed by</span>
+            <a href="mailto:kimboris1310@gmail.com" class="footer-right__link">Boris Kim</a>
+          </p>
         </div>
+        <!-- /.footer-right -->
 
-        <div class="author">
-          &copy; 2019 Борис Ким -
-          <a href="mailto:kimboris1310@gmail.com" class="author__link">Контакты</a>
-        </div>
       </div>
+      <!-- /.footer-wrapper -->
     </div>
     <!-- /.container -->
   </footer>
   <!-- /.footer -->
 
-  <!-- Options jQuery, JavaScript -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/typed.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="js/loader.js"></script>
-  <!-- END Options jQuery, JavaScript -->
+  <!-- BEGIN jQuery JavaScript -->
+  <script src="js/script.min.js"></script>
+  <!-- END jQuery JavaScript -->
 </body>
 
 </html>
