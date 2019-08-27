@@ -11,50 +11,168 @@
   width: 100%
   height: 100%
 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+
   background: rgba($dark-color, .3)
   overflow-y: auto
 
   z-index: 4
 
-  /* BEGIN WRAPPER */ 
-  &-wrap 
-    position: relative
+  /* BEGIN ABOUT OF TOP (HEADER) */
+  &-top 
+    margin-bottom: 10px
+    
+    display: flex
+    justify-content: flex-end
+    
+  /* END ABOUT OF TOP (HEADER) */
+  
+  /* BEGIN SUBTITLE */
+  &-title 
+    margin-bottom: 10px
+    padding: 5px 0
+    text-align: center
+    text-transform: uppercase
+    font-weight: 550
+    color: rgba($dark-color, .75)
+    border-top: $light-bord 
+    border-bottom: $light-bord 
+  /* END SUBTITLE */
 
-    margin: 0 auto 
-    width: 80%
+  /* BEGIN ABOUT OF CONTENT */
+  &-content 
+    padding: 12px
+    background: #ffffff
+    user-select: none
 
-    background-color: #f6f6f6
-    background-image: linear-gradient(315deg, #f6f6f6 0%, #fafafa 74%)
-    border-radius: 2px
-    box-shadow: 0 0 10px 
+    & .container 
+      padding: 20px
+      background: #fafafa
+      box-shadow: 0 0 2px
+  
+  /* BEGIN LEFT BLOCK */
+  &-left 
+    text-align: center
 
-  /* END WRAPPER */
+    border: 1px dashed #2676FF
 
-  /* BEGIN AUTHOR'S PHOTO */
-  &-avatar 
-    margin: 0 auto
-    display: block
+    // name of author 
+    &__author 
+      text-transform: uppercase
+      font-weight: 550
+    
+    // position 
+    &__pos 
+      letter-spacing: 0.05em
+      font-size: 0.85em
+      font-style: italic
+    
+    // frame of photo 
+    &__frame 
+      margin: 20px auto 30px
+      display: block
 
-    // width: 180px
-    // height: 180px
+      width: 160px
+      height: 160px
 
-    // border-radius: 50%
-    // box-shadow: 0 0 4px
-
-    overflow: hidden
-
-    // &:hover 
-    //   cursor: pointer
-      
-    //   .about-avatar__photo 
-    //     transform: scale(1.7) translateY(10px)
-
+      border-radius: 50%
+      background: #ffffff
+      box-shadow: 0 0 2px #e5e5e5
+      overflow: hidden
+    
+    // photo 
     &__photo 
       width: 100%
       object-fit: cover
-      transition: .3s
+      transform: scale(0.8) translateY(-10px)
 
-  /* END AUTHOR'S PHOTO */
+  /* BEGIN CONTACTS */
+  &-contacts 
 
-  // .col-sm-12
-  //   border: 1px dashed #2676FF
+    &__title
+      margin-bottom: 5px
+
+    &__list
+      display: flex
+      flex-direction: column
+  
+    &__item 
+      padding: 7px 10px
+      border-bottom: $light-bord 
+    
+    // links of contacts 
+    &__link 
+      position: relative
+
+      display: flex
+      flex-direction: row-reverse
+      justify-content: space-between
+      align-items: center
+      
+      color: rgba($dark-color, .7)
+      transition: .25s 
+
+      &::after
+        content: ''
+        position: absolute
+        right: 35px
+        top: 15%
+
+        width: 1px
+        height: 70%
+        background: rgba($dark-color, .13)
+
+      &:hover 
+        cursor: pointer
+        color: $link-color
+
+      // icon for links 
+      &--icon 
+        display: flex
+        justify-content: center
+        align-items: center
+
+        width: 24px
+        height: 24px
+
+      // text for links 
+      &--text
+        font-size: 0.9em
+  
+  /* END CONTACTS */
+
+  /* BEGIN PROFILE */
+  &-profile 
+    &__title 
+      margin: 30px 0 5px
+    
+    &__text
+      padding: 7px 10px 0
+      text-align: justify
+      font-size: 0.85em
+      color: rgba($dark-color, .7)
+  /* END PROFILE */
+
+  /* BEGIN PROFILE */
+  &-skills 
+    &__title 
+      margin: 30px 0 5px
+  /* END PROFILE */
+    
+  /* END LEFT BLOCK */
+  
+  /* BEGIN RIGHT BLOCK */
+  &-right 
+    border: $bord 
+
+
+  /* END RIGHT BLOCK */
+
+
+  /* END ABOUT OF CONTENT */
+  
+
+  .col-md-3 
+    border: $bord 
+  .col-md-9 
+    border: 1px dashed #2676FF
