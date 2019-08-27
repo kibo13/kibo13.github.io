@@ -77,17 +77,30 @@
       justify-content: space-around
     
     &__link
-      text-transform: capitalize
+      position: relative
+
       font-family: monospace
       font-size: 1.15em
 
       color: $dark-color
-      border-bottom: 1px dashed $dark-color
-      transition: .25s
+
+      &::before,
+      &::after
+        content: ''
+        position: absolute
+        transition: .25s
+
+      &::before
+        content: '['
+        left: -8px
+      
+      &::after
+        content: ']'
 
       &:hover
-        font-weight: bold
-        color: $link-color
-        border-bottom: 1px dashed $link-color
+        &::before
+          transform: translateX(-7px)
+        &::after
+          transform: translateX(7px)
 
   /* END CARDS */

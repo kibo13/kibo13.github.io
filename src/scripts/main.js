@@ -29,13 +29,13 @@ $(document).ready(function () {
       switch (+works.children[i].getAttribute('data-index')) {
         case 1:
           tag.classList.add('tag', 'tag--html');
-          tag.innerHTML = 'Вёрстка';
+          tag.innerHTML = 'Сайт';
           works.children[i].childNodes[1].appendChild(tag);
           break;
 
         case 2:
           tag.classList.add('tag', 'tag--css');
-          tag.innerHTML = 'Элемент';
+          tag.innerHTML = 'Анимация';
           works.children[i].childNodes[1].appendChild(tag);
           break;
 
