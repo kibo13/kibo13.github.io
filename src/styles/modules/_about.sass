@@ -41,20 +41,19 @@
 
   /* BEGIN ABOUT OF CONTENT */
   &-content 
-    padding: 12px
-    background: #ffffff
+    margin: 0 auto
+    width: 86%
+
     user-select: none
 
     & .container 
-      padding: 20px
+      padding: 30px 20px
       background: #fafafa
-      box-shadow: 0 0 2px
+      box-shadow: 0 0 4px
   
   /* BEGIN LEFT BLOCK */
   &-left 
     text-align: center
-
-    border: 1px dashed #2676FF
 
     // name of author 
     &__author 
@@ -144,35 +143,135 @@
   /* BEGIN PROFILE */
   &-profile 
     &__title 
-      margin: 30px 0 5px
+      margin: 35px 0 5px
     
     &__text
       padding: 7px 10px 0
       text-align: justify
-      font-size: 0.85em
+      font-size: 0.88em
       color: rgba($dark-color, .7)
+
   /* END PROFILE */
 
   /* BEGIN PROFILE */
   &-skills 
+
     &__title 
       margin: 30px 0 5px
+      
   /* END PROFILE */
     
   /* END LEFT BLOCK */
   
   /* BEGIN RIGHT BLOCK */
   &-right 
-    border: $bord 
 
+  /* BEGIN WORK EXPIRIENCE */
+  &-exp 
 
-  /* END RIGHT BLOCK */
+    // item 
+    &__item 
+      margin-bottom: 20px
 
+    // organization 
+    &__org 
+      display: flex
+      text-transform: uppercase
+      font-weight: 650
+      
+      &--name
+        position: relative
+        padding-right: 15px
+        color: rgba($dark-color, .85)
 
-  /* END ABOUT OF CONTENT */
+        &::after
+          content: ''
+          position: absolute
+          top: 20%
+          right: 0
+          width: 1px
+          height: 70%
+          background: rgba($dark-color, .13)
+
+      &--pos 
+        margin-left: 15px
+        color: rgba($dark-color, .5)
+    
+    // period 
+    &__time 
+      margin: 5px 0 10px
+      font-style: italic
+      font-size: 0.85em
+      color: rgba($dark-color, .7)
+    
+    // description 
+    &__descrip 
+      text-align: justify
+      font-size: 0.88em
+      color: rgba($dark-color, .7)
+  /* END WORK EXPIRIENCE*/
   
+  /* BEGIN WORK EDUCATION */
+  &-education 
+    color: rgba($dark-color, .7)
 
-  .col-md-3 
-    border: $bord 
-  .col-md-9 
-    border: 1px dashed #2676FF
+    &__title 
+      margin: 35px 0 20px
+
+    &__item
+      margin-bottom: 20px
+      display: flex
+
+    &__time
+      position: relative
+      padding: 3px 0
+      padding-right: 30px
+
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+
+      font-size: 0.8em
+      font-weight: bold
+
+      &::after
+        content: ''
+        position: absolute
+        top: 5%
+        right: 0
+        width: 1px
+        height: 90%
+        background: rgba($dark-color, .13)
+
+    &__info 
+      margin-left: 30px
+
+    &__type
+      text-transform: uppercase
+
+    &__spec
+      margin: 5px 0 10px
+      font-style: italic
+      font-size: 0.85em
+      color: rgba($dark-color, .7)
+
+    // description 
+    &__descrip 
+      text-align: justify
+      font-size: 0.88em
+      color: rgba($dark-color, .7)    
+
+      /* END WORK EDUCATION */
+    /* END RIGHT BLOCK */
+  /* END ABOUT OF CONTENT */
+
+// media 
+@media (max-width: $desktopWidth)
+  .about 
+    &-content
+      width: 100% !important
+
+@media (max-width: $mobileWidth)
+  .about 
+    .col-md-12
+      padding: 0 !important
