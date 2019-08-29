@@ -11,54 +11,46 @@
   width: 100%
   height: 100%
 
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  font-family: $default-font		
 
   background: rgba($dark-color, .3)
   overflow-y: auto
-
+  user-select: none
   z-index: 4
-
-  /* BEGIN ABOUT OF TOP (HEADER) */
-  &-top 
-    margin-bottom: 10px
-    
-    display: flex
-    justify-content: flex-end
-    
-  /* END ABOUT OF TOP (HEADER) */
-  
+ 
   /* BEGIN SUBTITLE */
   &-title 
     margin-bottom: 10px
     padding: 5px 0
+
     text-align: center
     text-transform: uppercase
     font-weight: 550
     color: rgba($dark-color, .75)
+
     border-top: $light-bord 
     border-bottom: $light-bord 
   /* END SUBTITLE */
 
-  /* BEGIN ABOUT OF CONTENT */
+  /* BEGIN CONTENT */
   &-content 
     margin: 0 auto
     width: 86%
 
-    user-select: none
-
     & .container 
-      padding: 30px 20px
+      padding: 35px 20px 25px
       background: #fafafa
       box-shadow: 0 0 4px
-  
-  /* BEGIN LEFT BLOCK */
+  /* END CONTENT */
+
+  /* =========================== BEGIN left block */
   &-left 
     text-align: center
 
     // name of author 
     &__author 
       text-transform: uppercase
-      font-weight: 550
+      font-weight: 600
     
     // position 
     &__pos 
@@ -150,24 +142,55 @@
       text-align: justify
       font-size: 0.88em
       color: rgba($dark-color, .7)
-
   /* END PROFILE */
 
   /* BEGIN PROFILE */
   &-skills 
 
     &__title 
-      margin: 30px 0 5px
+      margin: 30px 0 15px
+
+    &__item 
+      margin-bottom: 15px
+
+      display: flex
+      flex-direction: column
       
+      font-size: 0.75em
+      color: rgba($dark-color, .7)
+
+    &__marks
+      display: flex
+      justify-content: space-between
+
+    &__rate
+      &--normal
+        color: #9e9e9e
+        font-size: 0.87em
+    
+    &__line 
+      margin: 5px -0.25em 0
+      display: flex
+    
+    &__block 
+      margin: 0 0.25em
+      flex-basis: 20%
+      height: 10px
+      box-shadow: 0 0 2px rgba($dark-color, .7)
+
+      &--fill 
+        background: rgba($dark-color, .65)
   /* END PROFILE */
     
-  /* END LEFT BLOCK */
+  /* =========================== END left block */
   
-  /* BEGIN RIGHT BLOCK */
-  &-right 
+  /* =========================== BEGIN right block */
 
   /* BEGIN WORK EXPIRIENCE */
   &-exp 
+
+    &__title 
+      margin-bottom: 20px
 
     // item 
     &__item 
@@ -211,7 +234,7 @@
       color: rgba($dark-color, .7)
   /* END WORK EXPIRIENCE*/
   
-  /* BEGIN WORK EDUCATION */
+  /* BEGIN EDUCATION */
   &-education 
     color: rgba($dark-color, .7)
 
@@ -260,18 +283,143 @@
       text-align: justify
       font-size: 0.88em
       color: rgba($dark-color, .7)    
+  /* END EDUCATION */
 
-      /* END WORK EDUCATION */
-    /* END RIGHT BLOCK */
-  /* END ABOUT OF CONTENT */
+  /* BEGIN HOBBY */
+  &-hobby 
+    color: rgba($dark-color, .7)
+
+    &__title 
+      margin: 30px 0 5px
+    
+    &__item 
+      padding: 10px
+
+      display: flex
+      align-items: center
+
+      border-bottom: $light-bord 
+
+      &--icon 
+        display: flex
+        justify-content: center
+        align-items: center
+
+        width: 24px
+        height: 24px
+
+      &--text
+        width: 100%
+        height: 24px
+        text-align: right
+        font-size: 0.9em
+  /* END HOBBY */
+
+  /* BEGIN SIGNATURE */
+  &-sign 
+    margin-top: 30px
+
+    text-align: right
+    font-family: $caveat-font
+    font-size: 1.25em
+
+    &--border 
+      position: relative
+      padding: 15px 15px 0
+      border-bottom: $light-bord 
+
+      &::before
+        content: 'Подпись'
+        position: absolute
+        top: 0
+        left: 0
+        font-family: $default-font
+        font-size: 0.5em
+  /* END SIGNATURE */
+
+  /* =========================== END right block */
 
 // media 
 @media (max-width: $desktopWidth)
   .about 
     &-content
       width: 100% !important
+    
+@media (max-width: $laptopWidth)
+  .about 
+    .col-lg-8 
+      margin-top: 20px
+    .col-md-12
+      padding: 0 1em !important
 
 @media (max-width: $mobileWidth)
   .about 
+    // profile 
+    &-profile 
+      &__text
+        text-align: left
+
+    // work expirience 
+    &-exp 
+      &__descrip 
+        text-align: left
+
+      &__org 
+        display: flex
+        flex-direction: column
+        font-size: .9em
+
+        &--name::after
+          width: 0
+          
+        &--pos 
+          margin-left: 0
+
+    // education 
+    &-education 
+      &__item
+        display: flex
+        flex-direction: column
+
+      &__time 
+        padding: 0
+        display: flex
+        flex-direction: row-reverse
+        justify-content: flex-end
+        font-size: 0.75em
+
+        &::after
+          width: 0
+        
+        &--from 
+          position: relative
+          padding-right: 6px
+          &::after
+            content: '–'
+            position: absolute
+            right: -6px
+            font-size: 1.05em
+            line-height: 1.05em
+
+        &--to 
+          margin-left: 12px
+        
+      &__info 
+        margin-left: 0
+
+      &__descrip
+        text-align: left
+      
+    // hobby 
+    &-hobby 
+      .col-sm-6 
+        padding: 0 !important
+      &__item 
+        &--icon 
+          margin-right: 10px
+        &--text
+          text-align: left
+
+    // grid 
     .col-md-12
       padding: 0 !important
