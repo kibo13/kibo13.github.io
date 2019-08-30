@@ -1,7 +1,31 @@
+// caveat
 @font-face {
-  font-family: 'caveatregular';
-  src: url("../fonts/caveat/regular/caveat-regular-webfont.woff2") format("woff2"),
+  font-family: "caveatregular";
+  src: url("../fonts/caveat/regular/caveat-regular-webfont.woff2")
+      format("woff2"),
     url("../fonts/caveat/regular/caveat-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
+// russo one 
+@font-face {
+  font-family: 'russo_oneregular';
+  src: url('../fonts/russo/regular/russoone-regular-webfont.woff2') format('woff2'),
+        url('../fonts/russo/regular/russoone-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// exo-2 
+@font-face {
+  font-family: 'exo_2regular';
+  src: url('../fonts/exo/regular/exo2-regular-webfont.woff2') format('woff2'),
+        url('../fonts/exo/regular/exo2-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+

@@ -11,7 +11,7 @@
   width: 100%
   height: 100%
 
-  font-family: $default-font		
+  font-family: $exo-font
 
   background: rgba($dark-color, .3)
   overflow-y: auto
@@ -21,11 +21,10 @@
   /* BEGIN SUBTITLE */
   &-title 
     margin-bottom: 10px
-    padding: 5px 0
+    padding: 7px 0
 
     text-align: center
     text-transform: uppercase
-    font-weight: 550
     color: rgba($dark-color, .75)
 
     border-top: $light-bord 
@@ -141,6 +140,7 @@
       padding: 7px 10px 0
       text-align: justify
       font-size: 0.88em
+      line-height: 20px
       color: rgba($dark-color, .7)
   /* END PROFILE */
 
@@ -169,7 +169,7 @@
         font-size: 0.87em
     
     &__line 
-      margin: 5px -0.25em 0
+      margin: 2px -0.25em 0
       display: flex
     
     &__block 
@@ -231,6 +231,7 @@
     &__descrip 
       text-align: justify
       font-size: 0.88em
+      line-height: 20px
       color: rgba($dark-color, .7)
   /* END WORK EXPIRIENCE*/
   
@@ -282,6 +283,7 @@
     &__descrip 
       text-align: justify
       font-size: 0.88em
+      line-height: 20px
       color: rgba($dark-color, .7)    
   /* END EDUCATION */
 
@@ -309,6 +311,10 @@
         height: 24px
 
       &--text
+        display: flex
+        align-items: center
+        justify-content: flex-end
+
         width: 100%
         height: 24px
         text-align: right
@@ -333,7 +339,7 @@
         position: absolute
         top: 0
         left: 0
-        font-family: $default-font
+        font-family: $exo-font
         font-size: 0.5em
   /* END SIGNATURE */
 
@@ -418,7 +424,7 @@
         &--icon 
           margin-right: 10px
         &--text
-          text-align: left
+          justify-content: flex-start
 
     // grid 
     .col-md-12

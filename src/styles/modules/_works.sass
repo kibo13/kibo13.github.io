@@ -49,7 +49,6 @@
       height: 52px
 
       text-align: center
-      font-family: monospace
 
       background: #ffffff
       transition: .4s
@@ -68,20 +67,18 @@
       font-size: 1.3em
 
       &--year
-        font-size: .78em !important
+        font-size: .85em !important
     
     // group links 
     &__group 
-      margin: 0.7em 0 1em
+      margin: 0.85em 0
       display: flex
       justify-content: space-around
     
     &__link
       position: relative
 
-      font-family: monospace
-      font-size: 1.15em
-
+      font-size: 0.85em
       color: $dark-color
 
       &::before,
@@ -96,11 +93,15 @@
       
       &::after
         content: ']'
+        right: -8px
 
       &:hover
         &::before
-          transform: translateX(-7px)
+          transform: translateX(-5px)
         &::after
-          transform: translateX(7px)
+          transform: translateX(5px)
 
+    &__text
+      font-size: .85em
+      line-height: 20px
   /* END CARDS */

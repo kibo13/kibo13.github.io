@@ -2,15 +2,15 @@
 .headline
   margin-bottom: 20px
   text-align: center
-  font-family: 'ARIAL BLACK'
+  font-family: $russo-font
   user-select: none
 
   &__char 
     position: relative
-    font-size: 3.3em
+    padding: 0 0.05em
+    font-size: 4.6em
     color: #fafafa
-    text-shadow: -1px 0 1px rgba(158, 158, 158, 0.3)
-
+    
     &::before,
     &::after
       content: attr(data-char)
@@ -18,30 +18,37 @@
       top: 0
       left: 0
       transform-origin: left
+      transition: .3s cubic-bezier(0,1.88,.83,.67)
     
     &::before
-      color: #ffffff
-      transition: .3s cubic-bezier(0,1.88,.83,.67)
-      transform: rotateY(30deg)
+      color: #fafafa
+      transform: rotateY(35deg)
+      text-shadow: 1px 0 1px rgba($dark-color, .7)
       z-index: 2
     
     &::after
-      color: rgba(#000000, .7)
-      transition: .3s cubic-bezier(0,1.88,.83,.67)
-      transform: rotateY(5deg) scale(1.07, 1) skewY(3deg)
+      color: $dark-color
+      transform: rotateY(3deg) scale(1.06, 1) skewY(3deg)
       opacity: 0.5
       z-index: 1        
 
     &:hover
       cursor: pointer
       &::before
-        transform: perspective(1000px) rotateY(-45deg)
+        transform: perspective(1000px) rotateY(0)
       &::after
-        transform: rotateY(0) scale(1.11, 1) skewY(6deg)
+        transform: rotateY(0) scale(1, 1) skewY(3deg)
+
+@media (max-width: $desktopWidth)
+  .headline 
+    margin-bottom: 0
+
+@media (max-width: $tabletWidth)
+  .headline 
+    &__char 
+      font-size: 3em
 
 @media (max-width: $mobileWidth)
-  .headline
-    margin-bottom: 10px
-    
+  .headline   
     &__char
-      font-size: 1.9em
+      font-size: 2em
