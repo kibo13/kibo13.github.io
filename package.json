@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/kibo13/OptimalPackageHTML#readme",
   "devDependencies": {
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.26.7",
     "del": "^5.0.0",
     "gulp": "^4.0.2",
@@ -31,9 +32,5 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-terser": "^1.2.0"
-  },
-  "dependencies": {
-    "bootstrap": "^4.3.1",
-    "jquery": "^3.4.1"
   }
 }

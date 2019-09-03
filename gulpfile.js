@@ -45,10 +45,7 @@ gulp.task('browser-sync', function () {
  */
 
 gulp.task('scripts', function () {
-  return gulp.src([
-    `node_modules/jquery/dist/jquery.min.js`,
-    `${PATHS.src}/scripts/*.js`,
-  ])
+  return gulp.src(`${PATHS.src}/scripts/*.js`)
     .pipe(concat('script.min.js'))
     // .pipe(sourcemaps.init())
     .pipe(terser())
@@ -83,7 +80,7 @@ gulp.task('styles', function () {
     .pipe(cleanCss())
     // .pipe(sourcemaps.write())
     .pipe(gulp.dest(`${PATHS.dist}/css`))
-    .pipe(browserSync.reload({ stream: true }))
+    .pipe(browserSync.stream())
 })
 
 

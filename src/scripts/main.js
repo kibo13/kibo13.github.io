@@ -1,24 +1,51 @@
-$(document).ready(function () {
+document.body.onload = function () {
+  /**
+      * loader
+   */
+
+  setTimeout(function () {
+    let preloader = document.getElementById('loader');
+    if (!preloader.classList.contains('done')) {
+      preloader.classList.add('done');
+    }
+  }, 1000); 
+}
+
+function ready(callback) {
+  
+  // in case the document is already rendered
+  if (document.readyState != 'loading') callback();
+
+  // modern browsers
+  else if (document.addEventListener) document.addEventListener('DOMContentLoaded', callback);
+
+  // IE <= 8
+  else document.attachEvent('onreadystatechange', function () {
+    if (document.readyState == 'complete') callback();
+  });
+}
+
+ready(function () {
 
   // body 
-  const body        = document.querySelector('body');
+  const body = document.querySelector('body');
 
   // modules 
-  const mNavbar     = document.getElementById('navbar');
-  const mResume     = document.getElementById('about');
+  const mNavbar = document.getElementById('navbar');
+  const mResume = document.getElementById('about');
 
   // buttons 
-  const bHTML       = document.getElementById('html-sort');
-  const bCSS        = document.getElementById('css-sort');
-  const bJS         = document.getElementById('js-sort');
+  const bHTML = document.getElementById('html-sort');
+  const bCSS = document.getElementById('css-sort');
+  const bJS = document.getElementById('js-sort');
   const bResumeShow = document.getElementById('resume-show');
   const bResumeHide = document.getElementById('resume-hide');
 
   // data (array)
-  const works       = document.querySelector('.works-list');
+  const works = document.querySelector('.works-list');
 
   /**
-      * Вывод тэгов на экран 
+      * Отрисовка тэгов для карточек
    */
 
   PrintTags();
@@ -111,7 +138,8 @@ $(document).ready(function () {
   bResumeHide.addEventListener('click', function () {
     mResume.style.display = 'none';
     mNavbar.style.display = 'flex';
-    body.style.overflow = 'auto';    
+    body.style.overflow = 'auto';
   });
 
-})
+});
+

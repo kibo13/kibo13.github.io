@@ -1,740 +1,1003 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Борис Ким - Frontend разработчик</title>
+    <link rel="icon" href="img/static/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Борис Ким - Frontend разработчик</title>
-  <link rel="icon" href="img/static/favicon.ico" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" />
-  <link rel="stylesheet" href="css/style.min.css" />
-</head>
+  <body>
 
-<body>
-  <header class="header">
-    <nav id="navbar" class="navbar">
-      <div class="container d-flex justify-content-between">
-        <a href="https://kibo13.github.io/" class="navbar-logo">
-          <img src="img/author/logo.png" alt="LOGOTYPE" class="navbar-logo__icon" />
-        </a>
-        <!-- /.navbar-logo -->
-
-        <div class="btn-group d-flex">
-          <div id="html-sort" class="btn" data-index="1" data-hint="Сайты">
-            <div class="btn-front">
-              <i class="fab fa-html5 btn-icon btn-icon--html"></i>
-            </div>
-            <button class="btn-back">
-              <i class="fab fa-html5 btn-icon btn-icon--html"></i>
-            </button>
-          </div>
-          <!-- /.btn-sites -->
-          <div id="css-sort" class="btn" data-index="2" data-hint="Анимации">
-            <div class="btn-front">
-              <i class="fab fa-css3-alt btn-icon btn-icon--css"></i>
-            </div>
-            <button class="btn-back">
-              <i class="fab fa-css3-alt btn-icon btn-icon--css"></i>
-            </button>
-          </div>
-          <!-- /.btn-animation -->
-          <div id="js-sort" class="btn" data-index="3" data-hint="Приложения">
-            <div class="btn-front">
-              <i class="fab fa-js btn-icon btn-icon--js"></i>
-            </div>
-            <button class="btn-back">
-              <i class="fab fa-js btn-icon btn-icon--js"></i>
-            </button>
-          </div>
-          <!-- /.btn-app -->
-          <div id="resume-show" class="btn" data-hint="Резюме">
-            <div class="btn-front">
-              <i class="fas fa-user btn-icon"></i>
-            </div>
-            <button class="btn-back">
-              <i class="fas fa-user btn-icon"></i>
-            </button>
-          </div>
-          <!-- /.btn-about -->
+    <div id="loader" class="loader">
+      <div class="loader__logo">
+        <div class="loader__box">
+          <span class="loader__char loader__char--K"></span>
+          <span class="loader__char loader__char--B"></span>
         </div>
-        <!-- /.btn-group -->
       </div>
-      <!-- /.container -->
-    </nav>
-    <!-- /#navbar.navbar -->
-  </header>
-  <!-- /.header -->
+    </div>
+    <!-- /.loader -->
 
-  <main class="main">
-    <section id="about" class="about">
-      <div class="container">
-        <div class="about-top d-flex justify-content-end mb-4">
-          <div id="resume-hide" class="btn" data-hint="Закрыть">
-            <div class="btn-front">
-              <i class="fas fa-times btn-front__icon"></i>
+    <header class="header">
+      <nav id="navbar" class="navbar">
+        <div class="container d-flex justify-content-between">
+          <a href="https://kibo13.github.io/" class="navbar-logo">
+            <img
+              src="img/author/logo.png"
+              alt="LOGOTYPE"
+              class="navbar-logo__icon"
+            />
+          </a>
+          <!-- /.navbar-logo -->
+
+          <div class="btn-group d-flex">
+            <div id="html-sort" class="btn" data-index="1" data-hint="Сайты">
+              <div class="btn-front">
+                <i class="fab fa-html5 btn-icon btn-icon--html"></i>
+              </div>
+              <button class="btn-back">
+                <i class="fab fa-html5 btn-icon btn-icon--html"></i>
+              </button>
             </div>
-            <button class="btn-back">
-              <i class="fas fa-times btn-back__icon"></i>
-            </button>
+            <!-- /.btn-sites -->
+            <div id="css-sort" class="btn" data-index="2" data-hint="Анимации">
+              <div class="btn-front">
+                <i class="fab fa-css3-alt btn-icon btn-icon--css"></i>
+              </div>
+              <button class="btn-back">
+                <i class="fab fa-css3-alt btn-icon btn-icon--css"></i>
+              </button>
+            </div>
+            <!-- /.btn-animation -->
+            <div id="js-sort" class="btn" data-index="3" data-hint="Приложения">
+              <div class="btn-front">
+                <i class="fab fa-js btn-icon btn-icon--js"></i>
+              </div>
+              <button class="btn-back">
+                <i class="fab fa-js btn-icon btn-icon--js"></i>
+              </button>
+            </div>
+            <!-- /.btn-app -->
+            <div id="resume-show" class="btn" data-hint="Резюме">
+              <div class="btn-front">
+                <i class="fas fa-user btn-icon"></i>
+              </div>
+              <button class="btn-back">
+                <i class="fas fa-user btn-icon"></i>
+              </button>
+            </div>
+            <!-- /.btn-about -->
           </div>
           <!-- /.btn-group -->
         </div>
-        <!-- /.about-top -->
+        <!-- /.container -->
+      </nav>
+      <!-- /#navbar.navbar -->
+    </header>
+    <!-- /.header -->
 
-        <div class="about-content">
-          <div class="container">
-            <div class="row d-flex justify-content-center m-0">
-              <div class="col-lg-4 col-md-12 pr-4">
-                <div class="about-left">
-                  <!-- BEGIN about-author -->
-                  <h2 class="about-left__author">Борис Ким</h2>
-                  <p class="about-left__pos">Frontend Разработчик</p>
-                  <div class="about-left__frame">
-                    <img src="img/author/me.jpg" alt="photo" class="about-left__photo" />
-                  </div>
-                  <!-- END about-author -->
-
-                  <!-- BEGIN about-contacts -->
-                  <div class="about-contacts">
-                    <h3 class="about-title about-contacts__title">
-                      Контакты
-                    </h3>
-                    <ul class="about-contacts__list">
-                      <li class="about-contacts__item">
-                        <a class="about-contacts__link">
-                          <i class="fas fa-map-marker-alt about-contacts__link--icon"></i>
-                          <span class="about-contacts__link--text">Байконур</span>
-                        </a>
-                      </li>
-                      <li class="about-contacts__item">
-                        <a href="tel:+77713404056" class="about-contacts__link">
-                          <i class="fas fa-phone about-contacts__link--icon"></i>
-                          <span class="about-contacts__link--text">+7 (771) 340 40 56</span>
-                        </a>
-                      </li>
-                      <li class="about-contacts__item">
-                        <a href="mailto:kimboris1310@gmail.com" class="about-contacts__link">
-                          <i class="fas fa-envelope about-contacts__link--icon"></i>
-                          <span class="about-contacts__link--text">kimboris1310@gmail.com</span>
-                        </a>
-                      </li>
-                      <li class="about-contacts__item">
-                        <a href="https://kibo13.github.io/" target="_blank" class="about-contacts__link">
-                          <i class="fas fa-link about-contacts__link--icon"></i>
-                          <span class="about-contacts__link--text">kibo13.github.io</span>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                  <!-- END about-contacts -->
-
-                  <!-- BEGIN about-profile -->
-                  <div class="about-profile">
-                    <h3 class="about-title about-profile__title">О себе</h3>
-                    <p class="about-profile__text">
-                      Занимаюсь разработкой, дизайном и вёрсткой сайтов. Мне
-                      нравится искать интересные решения, создавать
-                      невозможное при помощи CSS и реализовывать идеи на
-                      сайте, планирую выполнение работы. Изучаю современные
-                      технологии, получаю новый опыт, улучшаю свои навыки и
-                      знания.
-                    </p>
-                  </div>
-                  <!-- END about-profile -->
-
-                  <!-- BEGIN about-skills -->
-                  <div class="about-skills">
-                    <h3 class="about-title about-skills__title">Навыки</h3>
-                    <ul class="about-skills__list">
-                      <li class="about-skills__item">
-                        <p class="about-skills__marks">
-                          <span class="about-skills__name">HTML5 (Pug)</span>
-                          <span class="about-skills__rate">
-                            5/<span class="about-skills__rate--normal">5</span>
-                          </span>
-                        </p>
-                        <p class="about-skills__line">
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                        </p>
-                      </li>
-                      <!-- /.about-skills__item-01 -->
-
-                      <li class="about-skills__item">
-                        <p class="about-skills__marks">
-                          <span class="about-skills__name">CSS3 (Sass, Stylus)</span>
-                          <span class="about-skills__rate">
-                            5/<span class="about-skills__rate--normal">5</span>
-                          </span>
-                        </p>
-                        <p class="about-skills__line">
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                        </p>
-                      </li>
-                      <!-- /.about-skills__item-02 -->
-
-                      <li class="about-skills__item">
-                        <p class="about-skills__marks">
-                          <span class="about-skills__name">Bootstrap 4</span>
-                          <span class="about-skills__rate">
-                            4/<span class="about-skills__rate--normal">5</span>
-                          </span>
-                        </p>
-                        <p class="about-skills__line">
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block"></span>
-                        </p>
-                      </li>
-
-                      <!-- /.about-skills__item-03 -->
-
-                      <li class="about-skills__item">
-                        <p class="about-skills__marks">
-                          <span class="about-skills__name">Gulp, Webpack</span>
-                          <span class="about-skills__rate">
-                            4/<span class="about-skills__rate--normal">5</span>
-                          </span>
-                        </p>
-                        <p class="about-skills__line">
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block"></span>
-                        </p>
-                      </li>
-                      <!-- /.about-skills__item-04 -->
-
-                      <li class="about-skills__item">
-                        <p class="about-skills__marks">
-                          <span class="about-skills__name">Javascript, jQuery</span>
-                          <span class="about-skills__rate">
-                            3/<span class="about-skills__rate--normal">5</span>
-                          </span>
-                        </p>
-                        <p class="about-skills__line">
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block"></span>
-                          <span class="about-skills__block"></span>
-                        </p>
-                      </li>
-                      <!-- /.about-skills__item-05 -->
-
-                      <li class="about-skills__item">
-                        <p class="about-skills__marks">
-                          <span class="about-skills__name">Vue, React</span>
-                          <span class="about-skills__rate">
-                            2/<span class="about-skills__rate--normal">5</span>
-                          </span>
-                        </p>
-                        <p class="about-skills__line">
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block"></span>
-                          <span class="about-skills__block"></span>
-                          <span class="about-skills__block"></span>
-                        </p>
-                      </li>
-                      <!-- /.about-skills__item-06 -->
-
-                      <li class="about-skills__item">
-                        <p class="about-skills__marks">
-                          <span class="about-skills__name">GitHub</span>
-                          <span class="about-skills__rate">
-                            4/<span class="about-skills__rate--normal">5</span>
-                          </span>
-                        </p>
-                        <p class="about-skills__line">
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block about-skills__block--fill"></span>
-                          <span class="about-skills__block"></span>
-                        </p>
-                      </li>
-                      <!-- /.about-skills__item-07 -->
-
-                    </ul>
-                  </div>
-                  <!-- END about-skills -->
-                </div>
-                <!-- /.about-left -->
+    <main class="main">
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-top d-flex justify-content-end mb-4">
+            <div id="resume-hide" class="btn" data-hint="Закрыть">
+              <div class="btn-front">
+                <i class="fas fa-times btn-front__icon"></i>
               </div>
-              <div class="col-lg-8 col-md-12 pl-4">
-                <div class="about-right">
-                  <!-- BEGIN about-experience -->
-                  <div class="about-exp">
-                    <h3 class="about-title about-exp__title">Опыт работы</h3>
-                    <ul class="about-exp__list">
-                      <li class="about-exp__item">
-                        <h4 class="about-exp__org">
-                          <span class="about-exp__org--name">КЦ "Южный"</span>
-                          <span class="about-exp__org--pos">Инженер-программист</span>
-                        </h4>
-                        <p class="about-exp__time">
-                          апрель 2015 - настоящее время
-                        </p>
-                        <p class="about-exp__descrip">
-                          Эксплуатация и администрирование программных
-                          комплексов АСКУЭ предприятия. Мониторинг
-                          работоспособности отдельных элементов АСКУЭ, каналов
-                          связи и контроль полноты сбора информации.
-                          Формирование отчетных форм для нужд предприятия.
-                          Поддержание в рабочем состоянии компьютерной техники
-                          и программного обеспечения, резервное копирование
-                          БД.
-                        </p>
-                      </li>
-                      <!-- /.organization-01 -->
+              <button class="btn-back">
+                <i class="fas fa-times btn-back__icon"></i>
+              </button>
+            </div>
+            <!-- /.btn-group -->
+          </div>
+          <!-- /.about-top -->
 
-                      <li class="about-exp__item">
-                        <h4 class="about-exp__org">
-                          <span class="about-exp__org--name">Аэропорт "Юбилейный"</span>
-                          <span class="about-exp__org--pos">Системный администратор</span>
-                        </h4>
-                        <p class="about-exp__time">
-                          октябрь 2013 - март 2015
-                        </p>
-                        <p class="about-exp__descrip">
-                          Установка и обслуживание компьютерной и офисной
-                          техники. Установка, настройка и обновление офисного
-                          и прикладного ПО. Обеспечение резервного копирования
-                          данных, а также восстановление данных при
-                          необходимости. Обеспечение безошибочной работы
-                          системного ПО. Обеспечение работоспособности и
-                          безопасности сети предприятия. Техническая поддержка
-                          и помощь пользователей.
-                        </p>
-                      </li>
-                      <!-- /.organization-02 -->
-
-                      <li class="about-exp__item">
-                        <h4 class="about-exp__org">
-                          <span class="about-exp__org--name">ГУП ПЭО "Байконурэнерго"</span>
-                          <span class="about-exp__org--pos">Техник АСКУЭ</span>
-                        </h4>
-                        <p class="about-exp__time">
-                          сентябрь 2010 - октябрь 2013
-                        </p>
-                        <p class="about-exp__descrip">
-                          Эксплуатация и техническое обслуживание оборудования
-                          АСКУЭ. Контроль и съем показаний с измерительных
-                          приборов, составление отчетов с информацией по
-                          энеропотреблению. Установка, настройка и обновление
-                          прикладного ПО АСКУЭ. Мониторинг и анализ
-                          потребления энергоресурсов предприятия средствами ПО
-                          АСКУЭ. Создание, редактирование графиков и
-                          мнемосхем. Разработка эксплуатационной документации
-                          для персонала.
-                        </p>
-                      </li>
-                      <!-- /.organization-03 -->
-                    </ul>
-                  </div>
-                  <!-- END about-experience -->
-
-                  <!-- BEGIN about-education -->
-                  <div class="about-education">
-                    <h3 class="about-title about-education__title">
-                      Образование
-                    </h3>
-                    <div class="about-education__list">
-                      <div class="about-education__item">
-                        <div class="about-education__time">
-                          <p class="about-education__time--to">2016</p>
-                          <p class="about-education__time--from">2010</p>
-                        </div>
-                        <div class="about-education__info">
-                          <h5 class="about-education__type">
-                            Высшее образование
-                          </h5>
-                          <p class="about-education__spec">Инженер</p>
-                          <p class="about-education__descrip">
-                            Окончил в 2016 году "Московский авиационный
-                            институт" по специальности "Автоматизированные
-                            системы обработки информации и управления" и
-                            получил высшее образование по квалификации
-                            инженер.
-                          </p>
-                        </div>
-                      </div>
-                      <!-- /.about-education__item-01 -->
-                      <div class="about-education__item">
-                        <div class="about-education__time">
-                          <p class="about-education__time--to">2010</p>
-                          <p class="about-education__time--from">2006</p>
-                        </div>
-                        <div class="about-education__info">
-                          <h5 class="about-education__type">
-                            Профессиональное образование
-                          </h5>
-                          <p class="about-education__spec">Техник</p>
-                          <p class="about-education__descrip">
-                            Окончил в 2010 году "Байконурский
-                            электрорадиотехнический техникум имени М.И.
-                            Неделина" по специальности "Программное
-                            обеспечение вычислительной техники и
-                            автоматизированных систем" и получил
-                            профессиональное образование по квалификации
-                            техник.
-                          </p>
-                        </div>
-                      </div>
-                      <!-- /.about-education__item-02 -->
+          <div class="about-content">
+            <div class="container">
+              <div class="row d-flex justify-content-center m-0">
+                <div class="col-lg-4 col-md-12 pr-4">
+                  <div class="about-left">
+                    <!-- BEGIN about-author -->
+                    <h2 class="about-left__author">Борис Ким</h2>
+                    <p class="about-left__pos">Frontend Разработчик</p>
+                    <div class="about-left__frame">
+                      <img
+                        src="img/author/me.jpg"
+                        alt="photo"
+                        class="about-left__photo"
+                      />
                     </div>
-                  </div>
-                  <!-- END about-education -->
+                    <!-- END about-author -->
 
-                  <!-- BEGIN about-hobby -->
-                  <div class="about-hobby">
-                    <h3 class="about-title about-hobby__title">
-                      Хобби
-                    </h3>
-                    <div class="row about-hobby__list m-0">
-                      <div class="col-sm-6">
-                        <div class="about-hobby__item">
-                          <i class="fas fa-running about-hobby__item--icon"></i>
-                          <span class="about-hobby__item--text">Бег</span>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="about-hobby__item">
-                          <i class="fas fa-music about-hobby__item--icon"></i>
-                          <span class="about-hobby__item--text">Музыка</span>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="about-hobby__item">
-                          <i class="fas fa-swimmer about-hobby__item--icon"></i>
-                          <span class="about-hobby__item--text">Плавание</span>
-                        </div>
-                      </div>
-                      <div class="col-sm-6">
-                        <div class="about-hobby__item">
-                          <i class="fas fa-plane about-hobby__item--icon"></i>
-                          <span class="about-hobby__item--text">Путешествия</span>
-                        </div>
-                      </div>
+                    <!-- BEGIN about-contacts -->
+                    <div class="about-contacts">
+                      <h3 class="about-title about-contacts__title">
+                        Контакты
+                      </h3>
+                      <ul class="about-contacts__list">
+                        <li class="about-contacts__item">
+                          <a class="about-contacts__link">
+                            <i
+                              class="fas fa-map-marker-alt about-contacts__link--icon"
+                            ></i>
+                            <span class="about-contacts__link--text"
+                              >Байконур</span
+                            >
+                          </a>
+                        </li>
+                        <li class="about-contacts__item">
+                          <a
+                            href="tel:+77713404056"
+                            class="about-contacts__link"
+                          >
+                            <i
+                              class="fas fa-phone about-contacts__link--icon"
+                            ></i>
+                            <span class="about-contacts__link--text"
+                              >+7 (771) 340 40 56</span
+                            >
+                          </a>
+                        </li>
+                        <li class="about-contacts__item">
+                          <a
+                            href="mailto:kimboris1310@gmail.com"
+                            class="about-contacts__link"
+                          >
+                            <i
+                              class="fas fa-envelope about-contacts__link--icon"
+                            ></i>
+                            <span class="about-contacts__link--text"
+                              >kimboris1310@gmail.com</span
+                            >
+                          </a>
+                        </li>
+                        <li class="about-contacts__item">
+                          <a
+                            href="https://kibo13.github.io/"
+                            target="_blank"
+                            class="about-contacts__link"
+                          >
+                            <i
+                              class="fas fa-link about-contacts__link--icon"
+                            ></i>
+                            <span class="about-contacts__link--text"
+                              >kibo13.github.io</span
+                            >
+                          </a>
+                        </li>
+                      </ul>
                     </div>
-                    <!-- /.row -->
-                  </div>
-                  <!-- END about-hobby -->
+                    <!-- END about-contacts -->
 
-                  <!-- BEGIN about-signature -->
-                  <div class="about-sign d-flex justify-content-end">
-                    <span class="about-sign--border">Boris Kim</span>
+                    <!-- BEGIN about-profile -->
+                    <div class="about-profile">
+                      <h3 class="about-title about-profile__title">О себе</h3>
+                      <p class="about-profile__text">
+                        Занимаюсь разработкой, дизайном и вёрсткой сайтов. Мне
+                        нравится искать интересные решения, создавать
+                        невозможное при помощи CSS и реализовывать идеи на
+                        сайте, планирую выполнение работы. Изучаю современные
+                        технологии, получаю новый опыт, улучшаю свои навыки и
+                        знания.
+                      </p>
+                    </div>
+                    <!-- END about-profile -->
+
+                    <!-- BEGIN about-skills -->
+                    <div class="about-skills">
+                      <h3 class="about-title about-skills__title">Навыки</h3>
+                      <ul class="about-skills__list">
+                        <li class="about-skills__item">
+                          <p class="about-skills__marks">
+                            <span class="about-skills__name">HTML5 (Pug)</span>
+                            <span class="about-skills__rate">
+                              5/<span class="about-skills__rate--normal"
+                                >5</span
+                              >
+                            </span>
+                          </p>
+                          <p class="about-skills__line">
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                          </p>
+                        </li>
+                        <!-- /.about-skills__item-01 -->
+
+                        <li class="about-skills__item">
+                          <p class="about-skills__marks">
+                            <span class="about-skills__name"
+                              >CSS3 (Sass, Stylus)</span
+                            >
+                            <span class="about-skills__rate">
+                              5/<span class="about-skills__rate--normal"
+                                >5</span
+                              >
+                            </span>
+                          </p>
+                          <p class="about-skills__line">
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                          </p>
+                        </li>
+                        <!-- /.about-skills__item-02 -->
+
+                        <li class="about-skills__item">
+                          <p class="about-skills__marks">
+                            <span class="about-skills__name">Bootstrap 4</span>
+                            <span class="about-skills__rate">
+                              4/<span class="about-skills__rate--normal"
+                                >5</span
+                              >
+                            </span>
+                          </p>
+                          <p class="about-skills__line">
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span class="about-skills__block"></span>
+                          </p>
+                        </li>
+
+                        <!-- /.about-skills__item-03 -->
+
+                        <li class="about-skills__item">
+                          <p class="about-skills__marks">
+                            <span class="about-skills__name"
+                              >Gulp, Webpack</span
+                            >
+                            <span class="about-skills__rate">
+                              4/<span class="about-skills__rate--normal"
+                                >5</span
+                              >
+                            </span>
+                          </p>
+                          <p class="about-skills__line">
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span class="about-skills__block"></span>
+                          </p>
+                        </li>
+                        <!-- /.about-skills__item-04 -->
+
+                        <li class="about-skills__item">
+                          <p class="about-skills__marks">
+                            <span class="about-skills__name"
+                              >Javascript, jQuery</span
+                            >
+                            <span class="about-skills__rate">
+                              3/<span class="about-skills__rate--normal"
+                                >5</span
+                              >
+                            </span>
+                          </p>
+                          <p class="about-skills__line">
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span class="about-skills__block"></span>
+                            <span class="about-skills__block"></span>
+                          </p>
+                        </li>
+                        <!-- /.about-skills__item-05 -->
+
+                        <li class="about-skills__item">
+                          <p class="about-skills__marks">
+                            <span class="about-skills__name">Vue, React</span>
+                            <span class="about-skills__rate">
+                              2/<span class="about-skills__rate--normal"
+                                >5</span
+                              >
+                            </span>
+                          </p>
+                          <p class="about-skills__line">
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span class="about-skills__block"></span>
+                            <span class="about-skills__block"></span>
+                            <span class="about-skills__block"></span>
+                          </p>
+                        </li>
+                        <!-- /.about-skills__item-06 -->
+
+                        <li class="about-skills__item">
+                          <p class="about-skills__marks">
+                            <span class="about-skills__name">GitHub</span>
+                            <span class="about-skills__rate">
+                              4/<span class="about-skills__rate--normal"
+                                >5</span
+                              >
+                            </span>
+                          </p>
+                          <p class="about-skills__line">
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span
+                              class="about-skills__block about-skills__block--fill"
+                            ></span>
+                            <span class="about-skills__block"></span>
+                          </p>
+                        </li>
+                        <!-- /.about-skills__item-07 -->
+                      </ul>
+                    </div>
+                    <!-- END about-skills -->
                   </div>
-                  <!-- END about-signature -->
+                  <!-- /.about-left -->
                 </div>
-                <!-- /.about-right -->
+                <div class="col-lg-8 col-md-12 pl-4">
+                  <div class="about-right">
+                    <!-- BEGIN about-experience -->
+                    <div class="about-exp">
+                      <h3 class="about-title about-exp__title">Опыт работы</h3>
+                      <ul class="about-exp__list">
+                        <li class="about-exp__item">
+                          <h4 class="about-exp__org">
+                            <span class="about-exp__org--name">КЦ "Южный"</span>
+                            <span class="about-exp__org--pos"
+                              >Инженер-программист</span
+                            >
+                          </h4>
+                          <p class="about-exp__time">
+                            апрель 2015 - настоящее время
+                          </p>
+                          <p class="about-exp__descrip">
+                            Эксплуатация и администрирование программных
+                            комплексов АСКУЭ предприятия. Мониторинг
+                            работоспособности отдельных элементов АСКУЭ, каналов
+                            связи и контроль полноты сбора информации.
+                            Формирование отчетных форм для нужд предприятия.
+                            Поддержание в рабочем состоянии компьютерной техники
+                            и программного обеспечения, резервное копирование
+                            БД.
+                          </p>
+                        </li>
+                        <!-- /.organization-01 -->
+
+                        <li class="about-exp__item">
+                          <h4 class="about-exp__org">
+                            <span class="about-exp__org--name"
+                              >Аэропорт "Юбилейный"</span
+                            >
+                            <span class="about-exp__org--pos"
+                              >Системный администратор</span
+                            >
+                          </h4>
+                          <p class="about-exp__time">
+                            октябрь 2013 - март 2015
+                          </p>
+                          <p class="about-exp__descrip">
+                            Установка и обслуживание компьютерной и офисной
+                            техники. Установка, настройка и обновление офисного
+                            и прикладного ПО. Обеспечение резервного копирования
+                            данных, а также восстановление данных при
+                            необходимости. Обеспечение безошибочной работы
+                            системного ПО. Обеспечение работоспособности и
+                            безопасности сети предприятия. Техническая поддержка
+                            и помощь пользователей.
+                          </p>
+                        </li>
+                        <!-- /.organization-02 -->
+
+                        <li class="about-exp__item">
+                          <h4 class="about-exp__org">
+                            <span class="about-exp__org--name"
+                              >ГУП ПЭО "Байконурэнерго"</span
+                            >
+                            <span class="about-exp__org--pos"
+                              >Техник АСКУЭ</span
+                            >
+                          </h4>
+                          <p class="about-exp__time">
+                            сентябрь 2010 - октябрь 2013
+                          </p>
+                          <p class="about-exp__descrip">
+                            Эксплуатация и техническое обслуживание оборудования
+                            АСКУЭ. Контроль и съем показаний с измерительных
+                            приборов, составление отчетов с информацией по
+                            энеропотреблению. Установка, настройка и обновление
+                            прикладного ПО АСКУЭ. Мониторинг и анализ
+                            потребления энергоресурсов предприятия средствами ПО
+                            АСКУЭ. Создание, редактирование графиков и
+                            мнемосхем. Разработка эксплуатационной документации
+                            для персонала.
+                          </p>
+                        </li>
+                        <!-- /.organization-03 -->
+                      </ul>
+                    </div>
+                    <!-- END about-experience -->
+
+                    <!-- BEGIN about-education -->
+                    <div class="about-education">
+                      <h3 class="about-title about-education__title">
+                        Образование
+                      </h3>
+                      <div class="about-education__list">
+                        <div class="about-education__item">
+                          <div class="about-education__time">
+                            <p class="about-education__time--to">2016</p>
+                            <p class="about-education__time--from">2010</p>
+                          </div>
+                          <div class="about-education__info">
+                            <h5 class="about-education__type">
+                              Высшее образование
+                            </h5>
+                            <p class="about-education__spec">Инженер</p>
+                            <p class="about-education__descrip">
+                              Окончил в 2016 году "Московский авиационный
+                              институт" по специальности "Автоматизированные
+                              системы обработки информации и управления" и
+                              получил высшее образование по квалификации
+                              инженер.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- /.about-education__item-01 -->
+                        <div class="about-education__item">
+                          <div class="about-education__time">
+                            <p class="about-education__time--to">2010</p>
+                            <p class="about-education__time--from">2006</p>
+                          </div>
+                          <div class="about-education__info">
+                            <h5 class="about-education__type">
+                              Профессиональное образование
+                            </h5>
+                            <p class="about-education__spec">Техник</p>
+                            <p class="about-education__descrip">
+                              Окончил в 2010 году "Байконурский
+                              электрорадиотехнический техникум имени М.И.
+                              Неделина" по специальности "Программное
+                              обеспечение вычислительной техники и
+                              автоматизированных систем" и получил
+                              профессиональное образование по квалификации
+                              техник.
+                            </p>
+                          </div>
+                        </div>
+                        <!-- /.about-education__item-02 -->
+                      </div>
+                    </div>
+                    <!-- END about-education -->
+
+                    <!-- BEGIN about-hobby -->
+                    <div class="about-hobby">
+                      <h3 class="about-title about-hobby__title">
+                        Хобби
+                      </h3>
+                      <div class="row about-hobby__list m-0">
+                        <div class="col-sm-6">
+                          <div class="about-hobby__item">
+                            <i
+                              class="fas fa-running about-hobby__item--icon"
+                            ></i>
+                            <span class="about-hobby__item--text">Бег</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="about-hobby__item">
+                            <i class="fas fa-music about-hobby__item--icon"></i>
+                            <span class="about-hobby__item--text">Музыка</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="about-hobby__item">
+                            <i
+                              class="fas fa-swimmer about-hobby__item--icon"
+                            ></i>
+                            <span class="about-hobby__item--text"
+                              >Плавание</span
+                            >
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="about-hobby__item">
+                            <i class="fas fa-plane about-hobby__item--icon"></i>
+                            <span class="about-hobby__item--text"
+                              >Путешествия</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- /.row -->
+                    </div>
+                    <!-- END about-hobby -->
+
+                    <!-- BEGIN about-signature -->
+                    <div class="about-sign d-flex justify-content-end">
+                      <span class="about-sign--border">Boris Kim</span>
+                    </div>
+                    <!-- END about-signature -->
+                  </div>
+                  <!-- /.about-right -->
+                </div>
+              </div>
+              <!-- /.row -->
+            </div>
+            <!-- /.container -->
+          </div>
+          <!-- /.about-content -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.about -->
+
+      <section id="works" class="works">
+        <div class="container">
+          <div class="headline">
+            <span class="headline__char" data-char="П">П</span>
+            <span class="headline__char" data-char="О">О</span>
+            <span class="headline__char" data-char="Р">Р</span>
+            <span class="headline__char" data-char="Т">Т</span>
+            <span class="headline__char" data-char="Ф">Ф</span>
+            <span class="headline__char" data-char="О">О</span>
+            <span class="headline__char" data-char="Л">Л</span>
+            <span class="headline__char" data-char="И">И</span>
+            <span class="headline__char" data-char="О">О</span>
+          </div>
+          <div class="row works-list">
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="0">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/static/mask.png"
+                      alt=""
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Скоро</li>
+                    <li class="works-item__date">
+                      август <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a href="#" class="works-item__link" target="_blank"
+                        >детали</a
+                      >
+                      <a href="#" class="works-item__link" target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Препятствия – это те страшные вещи, которые вы видите,
+                      когда отводите глаза от цели. (Генри Форд)
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <!-- /.row -->
-          </div>
-          <!-- /.container -->
-        </div>
-        <!-- /.about-content -->
-      </div>
-      <!-- /.container -->
-    </section>
-    <!-- /.about -->
+            <!-- /.works-item-01 -->
 
-    <section id="works" class="works">
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/layouts/layout-05.png"
+                      alt="Books"
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Books</li>
+                    <li class="works-item__date">
+                      август <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a
+                        href="https://github.com/kibo13/wbk-books"
+                        class="works-item__link"
+                        target="_blank"
+                        >детали</a
+                      >
+                      <a
+                        href="https://kibo13.github.io/wbk-books/"
+                        class="works-item__link"
+                        target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Вёрстка одностраничного сайта сообщества любителей книг,
+                      объединившихся для расширения cвоих читательских
+                      возможностей и пополнения...
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.works-item-02 -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="3">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/apps/app-01.png"
+                      alt="Calc"
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Калькулятор</li>
+                    <li class="works-item__date">
+                      июнь <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a
+                        href="https://github.com/kibo13/app-calculator"
+                        class="works-item__link"
+                        target="_blank"
+                        >детали</a
+                      >
+                      <a
+                        href="https://kibo13.github.io/app-calculator/"
+                        class="works-item__link"
+                        target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Простенький онлайн-калькулятор, с помощью которого можно
+                      производить различные математические расчёты.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.works-item-03 -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="2">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/elements/elem-01.png"
+                      alt="Clock"
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Часы</li>
+                    <li class="works-item__date">
+                      июнь <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a
+                        href="https://codepen.io/kibo13/pen/WqwRJQ"
+                        class="works-item__link"
+                        target="_blank"
+                        >детали</a
+                      >
+                      <a
+                        href="https://codepen.io/kibo13/pen/WqwRJQ"
+                        class="works-item__link"
+                        target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Простые онлайн часы. В мире нет ничего совершенно
+                      ошибочного - даже сломанные часы дважды в сутки показывают
+                      точное время. (Пауло Коэльо)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.works-item-04 -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="3">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/apps/app-02.png"
+                      alt="todo"
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Список задач</li>
+                    <li class="works-item__date">
+                      июнь <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a
+                        href="https://github.com/kibo13/app-todo-list"
+                        class="works-item__link"
+                        target="_blank"
+                        >детали</a
+                      >
+                      <a
+                        href="https://kibo13.github.io/app-todo-list/"
+                        class="works-item__link"
+                        target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Простое веб-приложение, которое отлично подойдет для
+                      составления списков задач, покупок, необходимых вещей и
+                      т.п.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.works-item-05 -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/layouts/layout-04.png"
+                      alt=""
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Advoagency</li>
+                    <li class="works-item__date">
+                      май <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a
+                        href="https://github.com/kibo13/wbk-advoagency"
+                        class="works-item__link"
+                        target="_blank"
+                        >детали</a
+                      >
+                      <a
+                        href="https://kibo13.github.io/wbk-advoagency/"
+                        class="works-item__link"
+                        target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Вёрстка одностраничного сайта международной юридической
+                      компании предоставляющей широкий спектр услуг юридическим
+                      организациям...
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.works-item-06 -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/layouts/layout-03.png"
+                      alt="Factory Skinned"
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Фабрика Скинали</li>
+                    <li class="works-item__date">
+                      май <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a
+                        href="https://github.com/kibo13/wbk-skinali"
+                        class="works-item__link"
+                        target="_blank"
+                        >детали</a
+                      >
+                      <a
+                        href="https://kibo13.github.io/wbk-skinali/"
+                        class="works-item__link"
+                        target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Вёрстка одностраничного сайта компании специализирующейся
+                      на изготовлении и обработке изделий из стекла и является
+                      одним из основных...
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.works-item-07 -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/layouts/layout-02.png"
+                      alt="Skyup"
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Skyup</li>
+                    <li class="works-item__date">
+                      май <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a
+                        href="https://github.com/kibo13/wbk-skyup"
+                        class="works-item__link"
+                        target="_blank"
+                        >детали</a
+                      >
+                      <a
+                        href="https://kibo13.github.io/wbk-skyup/"
+                        class="works-item__link"
+                        target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Вёрстка одностраничного сайта одной креативной студии
+                      дизайна полного цикла, с многолетним опытом и сильной
+                      экспертизой в создании сайтов...
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.works-item-08 -->
+
+            <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
+              <div class="works-item">
+                <div class="works-item__content">
+                  <div class="works-item__frame">
+                    <img
+                      src="img/layouts/layout-01.png"
+                      alt="Degcompany"
+                      class="works-item__photo"
+                    />
+                  </div>
+                  <ul class="works-item__info">
+                    <li class="works-item__title">Degcompany</li>
+                    <li class="works-item__date">
+                      май <span class="works-item__date--year">2019</span>
+                    </li>
+                    <div class="works-item__group">
+                      <a
+                        href="https://github.com/kibo13/wbk-degcompany"
+                        class="works-item__link"
+                        target="_blank"
+                        >детали</a
+                      >
+                      <a
+                        href="https://kibo13.github.io/wbk-degcompany/"
+                        class="works-item__link"
+                        target="_blank"
+                        >ссылка</a
+                      >
+                    </div>
+                    <li class="works-item__text">
+                      Вёрстка одностраничного сайта цифрового агентства
+                      специализирующегося на предоставлении полного спектра
+                      услуг в сферах веб-разработки...
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- /.works-item-09 -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container -->
+      </section>
+      <!-- /.works -->
+    </main>
+    <!-- /.main -->
+
+    <footer class="footer">
       <div class="container">
-        <div class="headline">
-          <span class="headline__char" data-char="П">П</span>
-          <span class="headline__char" data-char="О">О</span>
-          <span class="headline__char" data-char="Р">Р</span>
-          <span class="headline__char" data-char="Т">Т</span>
-          <span class="headline__char" data-char="Ф">Ф</span>
-          <span class="headline__char" data-char="О">О</span>
-          <span class="headline__char" data-char="Л">Л</span>
-          <span class="headline__char" data-char="И">И</span>
-          <span class="headline__char" data-char="О">О</span>
+        <div class="footer-info">
+          <div class="footer-left">
+            <p class="footer-left__copy">&copy; 2019</p>
+            <p class="footer-left__prot">Все права защищены.</p>
+          </div>
+          <!-- /.footer-left -->
+
+          <div class="footer-right">
+            <a href="https://kibo13.github.io/" class="footer-right__logo">
+              <img
+                src="img/author/logo.png"
+                alt="LOGOTYPE"
+                class="footer-right__icon"
+              />
+            </a>
+            <p class="footer-right__group">
+              <span class="footer-right__text">Developed by</span>
+              <a href="mailto:kimboris1310@gmail.com" class="footer-right__link"
+                >Boris Kim</a
+              >
+            </p>
+          </div>
+          <!-- /.footer-right -->
         </div>
-        <div class="row works-list">
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="0">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/static/mask.png" alt="" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Скоро</li>
-                  <li class="works-item__date">
-                    август <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="#" class="works-item__link" target="_blank">детали</a>
-                    <a href="#" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Препятствия – это те страшные вещи, которые вы видите,
-                    когда отводите глаза от цели. (Генри Форд)
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-01 -->
-
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/layouts/layout-05.png" alt="Books" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Books</li>
-                  <li class="works-item__date">
-                    август <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="https://github.com/kibo13/wbk-books" class="works-item__link" target="_blank">детали</a>
-                    <a href="https://kibo13.github.io/wbk-books/" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Вёрстка одностраничного сайта сообщества любителей книг,
-                    объединившихся для расширения cвоих читательских
-                    возможностей и пополнения...
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-02 -->
-
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="3">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/apps/app-01.png" alt="Calc" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Калькулятор</li>
-                  <li class="works-item__date">
-                    июнь <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="https://github.com/kibo13/app-calculator" class="works-item__link" target="_blank">детали</a>
-                    <a href="https://kibo13.github.io/app-calculator/" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Простенький онлайн-калькулятор, с помощью которого можно
-                    производить различные математические расчёты.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-03 -->
-
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="2">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/elements/elem-01.png" alt="Clock" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Часы</li>
-                  <li class="works-item__date">
-                    июнь <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="https://codepen.io/kibo13/pen/WqwRJQ" class="works-item__link" target="_blank">детали</a>
-                    <a href="https://codepen.io/kibo13/pen/WqwRJQ" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Простые онлайн часы. В мире нет ничего совершенно
-                    ошибочного - даже сломанные часы дважды в сутки показывают
-                    точное время. (Пауло Коэльо)
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-04 -->
-
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="3">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/apps/app-02.png" alt="todo" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Список задач</li>
-                  <li class="works-item__date">
-                    июнь <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="https://github.com/kibo13/app-todo-list" class="works-item__link" target="_blank">детали</a>
-                    <a href="https://kibo13.github.io/app-todo-list/" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Простое веб-приложение, которое отлично подойдет для
-                    составления списков задач, покупок, необходимых вещей и
-                    т.п.
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-05 -->
-
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/layouts/layout-04.png" alt="" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Advoagency</li>
-                  <li class="works-item__date">
-                    май <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="https://github.com/kibo13/wbk-advoagency" class="works-item__link" target="_blank">детали</a>
-                    <a href="https://kibo13.github.io/wbk-advoagency/" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Вёрстка одностраничного сайта международной юридической
-                    компании предоставляющей широкий спектр услуг юридическим
-                    организациям...
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-06 -->
-
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/layouts/layout-03.png" alt="Factory Skinned" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Фабрика Скинали</li>
-                  <li class="works-item__date">
-                    май <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="https://github.com/kibo13/wbk-skinali" class="works-item__link" target="_blank">детали</a>
-                    <a href="https://kibo13.github.io/wbk-skinali/" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Вёрстка одностраничного сайта компании специализирующейся
-                    на изготовлении и обработке изделий из стекла и является
-                    одним из основных...
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-07 -->
-
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/layouts/layout-02.png" alt="Skyup" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Skyup</li>
-                  <li class="works-item__date">
-                    май <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="https://github.com/kibo13/wbk-skyup" class="works-item__link" target="_blank">детали</a>
-                    <a href="https://kibo13.github.io/wbk-skyup/" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Вёрстка одностраничного сайта одной креативной студии
-                    дизайна полного цикла, с многолетним опытом и сильной
-                    экспертизой в создании сайтов...
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-08 -->
-
-          <div class="col-lg-4 col-md-6 col-sm-12 works-block" data-index="1">
-            <div class="works-item">
-              <div class="works-item__content">
-                <div class="works-item__frame">
-                  <img src="img/layouts/layout-01.png" alt="Degcompany" class="works-item__photo" />
-                </div>
-                <ul class="works-item__info">
-                  <li class="works-item__title">Degcompany</li>
-                  <li class="works-item__date">
-                    май <span class="works-item__date--year">2019</span>
-                  </li>
-                  <div class="works-item__group">
-                    <a href="https://github.com/kibo13/wbk-degcompany" class="works-item__link" target="_blank">детали</a>
-                    <a href="https://kibo13.github.io/wbk-degcompany/" class="works-item__link" target="_blank">ссылка</a>
-                  </div>
-                  <li class="works-item__text">
-                    Вёрстка одностраничного сайта цифрового агентства
-                    специализирующегося на предоставлении полного спектра
-                    услуг в сферах веб-разработки...
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <!-- /.works-item-09 -->
-        </div>
-        <!-- /.row -->
+        <!-- /.footer-wrapper -->
       </div>
       <!-- /.container -->
-    </section>
-    <!-- /.works -->
-  </main>
-  <!-- /.main -->
+    </footer>
+    <!-- /.footer -->
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-info">
-        <div class="footer-left">
-          <p class="footer-left__copy">&copy; 2019</p>
-          <p class="footer-left__prot">Все права защищены.</p>
-        </div>
-        <!-- /.footer-left -->
-
-        <div class="footer-right">
-          <a href="https://kibo13.github.io/" class="footer-right__logo">
-            <img src="img/author/logo.png" alt="LOGOTYPE" class="footer-right__icon" />
-          </a>
-          <p class="footer-right__group">
-            <span class="footer-right__text">Developed by</span>
-            <a href="mailto:kimboris1310@gmail.com" class="footer-right__link">Boris Kim</a>
-          </p>
-        </div>
-        <!-- /.footer-right -->
-      </div>
-      <!-- /.footer-wrapper -->
-    </div>
-    <!-- /.container -->
-  </footer>
-  <!-- /.footer -->
-
-  <!-- BEGIN jQuery JavaScript -->
-  <script src="js/script.min.js"></script>
-  <!-- END jQuery JavaScript -->
-</body>
-
+    <!-- BEGIN JavaScript -->
+    <script src="js/script.min.js"></script>
+    <!-- END JavaScript -->
+  </body>
 </html>
