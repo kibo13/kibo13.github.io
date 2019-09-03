@@ -1,6 +1,7 @@
 // caveat
 @font-face {
   font-family: "caveatregular";
+  font-display: swap;
   src: url("../fonts/caveat/regular/caveat-regular-webfont.woff2")
       format("woff2"),
     url("../fonts/caveat/regular/caveat-regular-webfont.woff") format("woff");
@@ -11,6 +12,7 @@
 // russo one 
 @font-face {
   font-family: 'russo_oneregular';
+  font-display: swap;
   src: url('../fonts/russo/regular/russoone-regular-webfont.woff2') format('woff2'),
         url('../fonts/russo/regular/russoone-regular-webfont.woff') format('woff');
   font-weight: normal;
@@ -20,6 +22,7 @@
 // exo-2 
 @font-face {
   font-family: 'exo_2regular';
+  font-display: swap;
   src: url('../fonts/exo/regular/exo2-regular-webfont.woff2') format('woff2'),
         url('../fonts/exo/regular/exo2-regular-webfont.woff') format('woff');
   font-weight: normal;
