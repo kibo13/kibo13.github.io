@@ -7,6 +7,9 @@ document.body.onload = function () {
     let preloader = document.getElementById('loader');
     if (!preloader.classList.contains('done')) {
       preloader.classList.add('done');
+      document.querySelector('body').style.overflow = 'auto'
+    } else {
+      document.querySelector('body').style.overflow = 'hidden'
     }
   }, 1000); 
 }
