@@ -1,3 +1,36 @@
+// body 
+const body = document.querySelector('body');
+
+// modules 
+const mNavbar = document.getElementById('navbar');
+const mResume = document.getElementById('about');
+
+// buttons 
+const bHTML = document.getElementById('html-sort');
+const bCSS = document.getElementById('css-sort');
+const bJS = document.getElementById('js-sort');
+const bResumeShow = document.getElementById('resume-show');
+const bResumeHide = document.getElementById('resume-hide');
+
+// data (array)
+const works = document.querySelector('.works-list');
+
+document.body.onload = function () { 
+  /**
+      * loader
+   */
+
+  body.style.overflow = 'hidden';
+
+  setTimeout(function () {
+    let preloader = document.getElementById('loader');
+    if (!preloader.classList.contains('done')) {
+      preloader.classList.add('done');
+      body.style.overflow = 'auto';
+    }
+  }, 1000);
+}
+
 function ready(callback) {
 
   // in case the document is already rendered
@@ -13,37 +46,6 @@ function ready(callback) {
 }
 
 ready(function () {
-
-  // body 
-  const body = document.querySelector('body');
-
-  // modules 
-  const mNavbar = document.getElementById('navbar');
-  const mResume = document.getElementById('about');
-
-  // buttons 
-  const bHTML = document.getElementById('html-sort');
-  const bCSS = document.getElementById('css-sort');
-  const bJS = document.getElementById('js-sort');
-  const bResumeShow = document.getElementById('resume-show');
-  const bResumeHide = document.getElementById('resume-hide');
-
-  // data (array)
-  const works = document.querySelector('.works-list');
-
-  /**
-      * loader
-   */
-
-  body.style.overflow = 'hidden';
-
-  setTimeout(function () {
-    let preloader = document.getElementById('loader');
-    if (!preloader.classList.contains('done')) {
-      preloader.classList.add('done');
-      body.style.overflow = 'auto';
-    }
-  }, 1000);
 
   /**
       * Отрисовка тэгов для карточек
