@@ -102,7 +102,7 @@ gulp.task('html', function () {
 */
 
 gulp.task('images', function () {
-  return gulp.src(`${PATHS.src}/images/**/*.{png,jpg,jpeg,gif,ico,svg}`)
+  return gulp.src(`${PATHS.src}/images/**/*`)
     .pipe(cache(imagemin([
       // imagemin.gifsicle({ interlaced: true }),
       // imagemin.jpegtran({ progressive: true }),
